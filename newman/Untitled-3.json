@@ -1,0 +1,1007 @@
+{
+    "SavedsearchGenericResponse": {
+        "Savedsearch": [
+            {
+                "getResponse": {
+                    "readResponse": {
+                        "status": null,
+                        "record": {
+                            "createdDate": "2023-11-09T17:07:01.000-08:00",
+                            "lastModifiedDate": "2023-12-01T12:57:35.000-08:00",
+                            "customForm": {
+                                "name": "C1 External Purchase Order"
+                            },
+                            "entity": {
+                                "name": "Pure Storage (V-PURSTO0001)"
+                            },
+                            "tranDate": "2023-11-08T22:00:00.000-08:00",
+                            "tranId": "PO60012948",
+                            "terms": {
+                                "name": "Net 45"
+                            },
+                            "approvalStatus": {
+                                "name": "Approved"
+                            },
+                            "exchangeRate": "1.0",
+                            "currencyName": "USD",
+                            "toBePrinted": "false",
+                            "toBeEmailed": "false",
+                            "toBeFaxed": "false",
+                            "billingAddress": {
+                                "country": "_unitedStates",
+                                "addressee": "Pure Storage",
+                                "addr1": "650 CASTRO ST",
+                                "city": "MOUNTAIN VIEW",
+                                "state": "CA",
+                                "zip": "94041-2057",
+                                "addrText": "Pure Storage\n650 CASTRO ST\nMOUNTAIN VIEW CA 94041-2057\nUnited States",
+                                "override": "false",
+                                "customFieldList": {
+                                    "BooleanCustomFieldRef__custrecord_c1_address_verified": {
+                                        "value": "false"
+                                    },
+                                    "BooleanCustomFieldRef__custrecord_c1_inactiveaddress": {
+                                        "value": "false"
+                                    },
+                                    "BooleanCustomFieldRef__custrecord_sureaddress_isaddresvalidated": {
+                                        "value": "true"
+                                    },
+                                    "DateCustomFieldRef__custrecord_sureaddress_lastvalidateddate": {
+                                        "value": "2023-09-25T12:03:01.000-07:00"
+                                    }
+                                }
+                            },
+                            "billAddressList": {
+                                "name": "2057 - 650 Castro St Ste 260"
+                            },
+                            "currency": {
+                                "name": "USD"
+                            },
+                            "shippingAddress": {
+                                "country": "_unitedStates",
+                                "city": "Brownsville",
+                                "state": "TX",
+                                "zip": "78520-8735",
+                                "addrText": "Heartland TEST ACCOUNT-IT ONLY\n1000 W PRICE RD\nBROWNSVILLE TX 78520-8735\nUS",
+                                "override": "true",
+                                "customFieldList": {
+                                    "BooleanCustomFieldRef__custrecord_c1_address_verified": {
+                                        "value": "false"
+                                    },
+                                    "BooleanCustomFieldRef__custrecord_c1_inactiveaddress": {
+                                        "value": "false"
+                                    },
+                                    "BooleanCustomFieldRef__custrecord_sureaddress_isaddresvalidated": {
+                                        "value": "false"
+                                    }
+                                }
+                            },
+                            "shipIsResidential": "false",
+                            "total": "100.0",
+                            "class": {
+                                "name": "360 Central Roll Up : 362 Heartland"
+                            },
+                            "location": {
+                                "name": "Drop Ship C1 Inc : 1501 Drop Ship C1 Inc"
+                            },
+                            "subsidiary": {
+                                "name": "Inc."
+                            },
+                            "status": "Pending Bill",
+                            "itemList": {
+                                "item": {
+                                    "item": {
+                                        "name": "#LYP-FA-X20R2-38TB"
+                                    },
+                                    "line": "1",
+                                    "quantityReceived": "1.0",
+                                    "quantityBilled": "0.0",
+                                    "quantity": "1.0",
+                                    "description": "#LYP-FA-X20R2-38TB",
+                                    "rate": "100.00",
+                                    "amount": "100.0",
+                                    "location": {
+                                        "name": "Drop Ship C1 Inc : 1501 Drop Ship C1 Inc"
+                                    },
+                                    "isClosed": "false",
+                                    "customFieldList": {
+                                        "LongCustomFieldRef__custcol_c1_line_number": {
+                                            "value": "1"
+                                        },
+                                        "BooleanCustomFieldRef__custcol_c1_variable_billing": {
+                                            "value": "false"
+                                        },
+                                        "StringCustomFieldRef__custcol_c1_po_quantity": {
+                                            "value": "1"
+                                        },
+                                        "SelectCustomFieldRef__custcolzab_term": {
+                                            "value": {
+                                                "name": "Period"
+                                            }
+                                        },
+                                        "SelectCustomFieldRef__custcol_c1_manufacturer": {
+                                            "value": {
+                                                "name": "PURESTORAG"
+                                            }
+                                        },
+                                        "SelectCustomFieldRef__cseg_c1_pl_segment": {
+                                            "value": {
+                                                "name": "1 Hardware New"
+                                            }
+                                        },
+                                        "SelectCustomFieldRef__custcol_c1_p_l_sub_segment": {
+                                            "value": {
+                                                "name": "Hardware"
+                                            }
+                                        },
+                                        "SelectCustomFieldRef__cseg_c1_line_of_bus": {
+                                            "value": {
+                                                "name": "99 Other"
+                                            }
+                                        },
+                                        "SelectCustomFieldRef__cseg_c1_practice": {
+                                            "value": {
+                                                "name": "57 Data Center : 571 Data Center"
+                                            }
+                                        },
+                                        "BooleanCustomFieldRef__custcol_c1phyisicalitem": {
+                                            "value": "true"
+                                        },
+                                        "BooleanCustomFieldRef__custcol_c1_special_bid": {
+                                            "value": "false"
+                                        },
+                                        "SelectCustomFieldRef__custcolc1_vendor_billing_frequency": {
+                                            "value": {
+                                                "name": "Prepaid"
+                                            }
+                                        },
+                                        "StringCustomFieldRef__custcol_c1_avaya_sold_to": {
+                                            "value": "53418589898"
+                                        },
+                                        "LongCustomFieldRef__custcol_c1_contract_term_in_months": {
+                                            "value": "0"
+                                        },
+                                        "SelectCustomFieldRef__custcolc1_peg_line": {
+                                            "value": {
+                                                "name": "#LYP-FA-X20R2-38TB"
+                                            }
+                                        },
+                                        "LongCustomFieldRef__custcol_c1_peglineid": {
+                                            "value": "504054"
+                                        },
+                                        "SelectCustomFieldRef__custcolc1_fulfillment_request": {
+                                            "value": {
+                                                "name": "11378"
+                                            }
+                                        },
+                                        "SelectCustomFieldRef__custcolc1_subscription": {
+                                            "value": {
+                                                "name": "CG CON-2622 Leasing Entity Address"
+                                            }
+                                        },
+                                        "StringCustomFieldRef__custcol_c1_design_number": {
+                                            "value": "- None -"
+                                        }
+                                    }
+                                }
+                            },
+                            "customFieldList": {
+                                "SelectCustomFieldRef__custbody_c1_superapprover": {
+                                    "value": {
+                                        "name": "Wangberg, Melissa"
+                                    }
+                                },
+                                "SelectCustomFieldRef__custbody_c1_installaddressselect": {
+                                    "value": {
+                                        "name": "SHIP22 - Brownsville"
+                                    }
+                                },
+                                "BooleanCustomFieldRef__custbody_imported_from_celigo": {
+                                    "value": "false"
+                                },
+                                "BooleanCustomFieldRef__custbody_po_hold": {
+                                    "value": "false"
+                                },
+                                "SelectCustomFieldRef__custbody_nsts_gaw_created_by": {
+                                    "value": {
+                                        "name": "Gardner, Cheryll"
+                                    }
+                                },
+                                "StringCustomFieldRef__custbody_c1_duns": {
+                                    "value": "82-541-0319"
+                                },
+                                "BooleanCustomFieldRef__custbody_c1_alternate_shipping_info": {
+                                    "value": "false"
+                                },
+                                "StringCustomFieldRef__custbody_c1_link_to_opp_docs": {
+                                    "value": "https://QAProServices.ConvergeOne.com//Redirector?Entity=CrmRedirect&Id=50f0491d-3f8b-438f-a3b6-9a9289453470&Item=Directory"
+                                },
+                                "BooleanCustomFieldRef__custbody_nsts_gaw_is_delegated": {
+                                    "value": "false"
+                                },
+                                "StringCustomFieldRef__custbody_c1_custcontactemail": {
+                                    "value": "kjohnson@NACR.com"
+                                },
+                                "SelectCustomFieldRef__custbody_c1_customer": {
+                                    "value": {
+                                        "name": "TESTCO0001 Central Cmcl TEST ACCOUNT-IT ONLY"
+                                    }
+                                },
+                                "SelectCustomFieldRef__custbody_c1_poid": {
+                                    "value": {
+                                        "name": "Purchase Order #PO60012948"
+                                    }
+                                },
+                                "StringCustomFieldRef__custbody_c1_customer_po": {
+                                    "value": "dd333"
+                                },
+                                "DateCustomFieldRef__custbody_esc_created_date": {
+                                    "value": "2023-11-08T22:00:00.000-08:00"
+                                },
+                                "StringCustomFieldRef__custbody_c1_3rd_party_billing": {
+                                    "value": "87474"
+                                },
+                                "BooleanCustomFieldRef__custbody_c1_advreplacementpo": {
+                                    "value": "false"
+                                },
+                                "SelectCustomFieldRef__custbody_c1_po_approver_9": {
+                                    "value": {
+                                        "name": "Barton, Denise"
+                                    }
+                                },
+                                "SelectCustomFieldRef__custbody_c1_po_approver_7": {
+                                    "value": {
+                                        "name": "Tozzi, Salvatore"
+                                    }
+                                },
+                                "SelectCustomFieldRef__custbody_c1_po_approver_8": {
+                                    "value": {
+                                        "name": "Barton, Denise"
+                                    }
+                                },
+                                "SelectCustomFieldRef__custbody_c1_po_approver_6": {
+                                    "value": {
+                                        "name": "Gonikman, Anna"
+                                    }
+                                },
+                                "StringCustomFieldRef__custbody_c1_customer_name": {
+                                    "value": "Heartland TEST ACCOUNT-IT ONLY"
+                                },
+                                "SelectCustomFieldRef__custbody_c1_po_approver_10": {
+                                    "value": {
+                                        "name": "King, Gail"
+                                    }
+                                },
+                                "BooleanCustomFieldRef__custbody_celigo_vpm_exported_payment": {
+                                    "value": "false"
+                                },
+                                "SelectCustomFieldRef__custbody_c1_shipping_option": {
+                                    "value": {
+                                        "name": "Allow Backorders"
+                                    }
+                                },
+                                "SelectCustomFieldRef__custbodyintegrationstatus": {
+                                    "value": {
+                                        "name": "Ready"
+                                    }
+                                },
+                                "SelectCustomFieldRef__custbodyc1_subscription": {
+                                    "value": {
+                                        "name": "CG CON-2622 Leasing Entity Address"
+                                    }
+                                },
+                                "BooleanCustomFieldRef__custbody_c1_pre_approved": {
+                                    "value": "false"
+                                },
+                                "StringCustomFieldRef__custbody_c1_requestor_line_of_business": {
+                                    "value": "11 Avaya"
+                                },
+                                "BooleanCustomFieldRef__custbody_c1_wffp_eligible": {
+                                    "value": "false"
+                                },
+                                "BooleanCustomFieldRef__custbody_c1_bill_3rd_party": {
+                                    "value": "false"
+                                },
+                                "BooleanCustomFieldRef__custbody_cash_register": {
+                                    "value": "false"
+                                },
+                                "SelectCustomFieldRef__custbody_c1_requestor_region": {
+                                    "value": {
+                                        "name": "331 South"
+                                    }
+                                },
+                                "SelectCustomFieldRef__custbody_wffp_acct": {
+                                    "value": {
+                                        "name": "20011 WFFP - C1 Inc"
+                                    }
+                                },
+                                "SelectCustomFieldRef__custbody_c1_ssr_name": {
+                                    "value": {
+                                        "name": "Patrick, Kimberly"
+                                    }
+                                },
+                                "SelectCustomFieldRef__custbody_c1_purchasing_queue": {
+                                    "value": {
+                                        "name": "PO Ready"
+                                    }
+                                },
+                                "DateCustomFieldRef__custbody_esc_last_modified_date": {
+                                    "value": "2023-11-30T22:00:00.000-08:00"
+                                },
+                                "StringCustomFieldRef__custbody_c1_install_location": {
+                                    "value": "Heartland TEST ACCOUNT-IT ONLY\n1000 W PRICE RD\nBROWNSVILLE TX 78520-8735\nUS"
+                                },
+                                "BooleanCustomFieldRef__custbody_c1_billablestatus": {
+                                    "value": "false"
+                                },
+                                "StringCustomFieldRef__custbodyc1_subscription_id": {
+                                    "value": "123704"
+                                },
+                                "SelectCustomFieldRef__custbody_nsts_gaw_tran_requestor": {
+                                    "value": {
+                                        "name": "Patrick, Kimberly"
+                                    }
+                                },
+                                "BooleanCustomFieldRef__custbody_c1_deliveryconfirm": {
+                                    "value": "false"
+                                },
+                                "StringCustomFieldRef__custbody_c1_custcontactno": {
+                                    "value": "123-654-8888"
+                                },
+                                "SelectCustomFieldRef__custbody_c1_po_type": {
+                                    "value": {
+                                        "name": "C1 Drop Ship"
+                                    }
+                                },
+                                "SelectCustomFieldRef__custbody_c1_po_matrix": {
+                                    "value": {
+                                        "name": "External PO"
+                                    }
+                                },
+                                "StringCustomFieldRef__custbody_c1_custcontactname": {
+                                    "value": "Kari Johnson"
+                                },
+                                "StringCustomFieldRef__custbody_c1_related_po": {
+                                    "value": "PO60012948"
+                                },
+                                "BooleanCustomFieldRef__custbody_nondeductible_processed": {
+                                    "value": "false"
+                                },
+                                "StringCustomFieldRef__custbody_c1_requestor_cc": {
+                                    "value": "1514 MASR - Field"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "getResponse": {
+                    "readResponse": {
+                        "status": null,
+                        "record": {
+                            "createdDate": "2023-11-15T09:18:42.000-08:00",
+                            "lastModifiedDate": "2023-12-01T12:57:26.000-08:00",
+                            "customForm": {
+                                "name": "C1 External Purchase Order"
+                            },
+                            "entity": {
+                                "name": "46 LABS COMMUNICATIONS (V-46LABS0001)"
+                            },
+                            "tranDate": "2023-11-14T22:00:00.000-08:00",
+                            "tranId": "PO60012960",
+                            "terms": {
+                                "name": "Net 30"
+                            },
+                            "approvalStatus": {
+                                "name": "Approved"
+                            },
+                            "exchangeRate": "1.0",
+                            "currencyName": "USD",
+                            "toBePrinted": "false",
+                            "toBeEmailed": "false",
+                            "toBeFaxed": "false",
+                            "billingAddress": {
+                                "country": "_unitedStates",
+                                "addressee": "46 LABS COMMUNICATIONS",
+                                "addr1": "1503 E 19TH ST",
+                                "city": "EDMOND",
+                                "state": "OK",
+                                "zip": "73013-6737",
+                                "addrText": "46 LABS COMMUNICATIONS\n1503 E 19TH ST\nEDMOND OK 73013-6737\nUnited States",
+                                "override": "false",
+                                "customFieldList": {
+                                    "BooleanCustomFieldRef__custrecord_c1_address_verified": {
+                                        "value": "false"
+                                    },
+                                    "BooleanCustomFieldRef__custrecord_c1_inactiveaddress": {
+                                        "value": "false"
+                                    },
+                                    "BooleanCustomFieldRef__custrecord_sureaddress_isaddresvalidated": {
+                                        "value": "true"
+                                    },
+                                    "DateCustomFieldRef__custrecord_sureaddress_lastvalidateddate": {
+                                        "value": "2023-09-25T11:05:31.000-07:00"
+                                    }
+                                }
+                            },
+                            "billAddressList": {
+                                "name": "211 - 1503 E 19TH ST"
+                            },
+                            "currency": {
+                                "name": "USD"
+                            },
+                            "shippingAddress": {
+                                "country": "_unitedStates",
+                                "addressee": "ConvergeOne Inc. c/o Shipping Dept",
+                                "addrPhone": "(888) 321-6227",
+                                "addr1": "10900 NESBITT AVE S",
+                                "city": "BLOOMINGTON",
+                                "state": "MN",
+                                "zip": "55437-3124",
+                                "addrText": "ConvergeOne Inc. c/o Shipping Dept\n10900 NESBITT AVE S\nBLOOMINGTON MN 55437-3124\nUnited States",
+                                "override": "false",
+                                "customFieldList": {
+                                    "BooleanCustomFieldRef__custrecord_c1_address_verified": {
+                                        "value": "false"
+                                    },
+                                    "BooleanCustomFieldRef__custrecord_c1_inactiveaddress": {
+                                        "value": "false"
+                                    },
+                                    "BooleanCustomFieldRef__custrecord_sureaddress_isaddresvalidated": {
+                                        "value": "true"
+                                    },
+                                    "DateCustomFieldRef__custrecord_sureaddress_lastvalidateddate": {
+                                        "value": "2023-06-23T15:06:48.000-07:00"
+                                    }
+                                }
+                            },
+                            "shipIsResidential": "false",
+                            "total": "0.0",
+                            "location": {
+                                "name": "Drop Ship C1 Inc : 1501 Drop Ship C1 Inc"
+                            },
+                            "subsidiary": {
+                                "name": "Inc."
+                            },
+                            "status": "Pending Bill",
+                            "itemList": {
+                                "item": {
+                                    "item": {
+                                        "name": "TM LABOR SUBS"
+                                    },
+                                    "line": "1",
+                                    "quantityBilled": "0.0",
+                                    "quantity": "1.0",
+                                    "description": "TM LABOR",
+                                    "rate": "0.00",
+                                    "amount": "0.0",
+                                    "isClosed": "false",
+                                    "customFieldList": {
+                                        "LongCustomFieldRef__custcol_c1_line_number": {
+                                            "value": "1"
+                                        },
+                                        "BooleanCustomFieldRef__custcol_c1_variable_billing": {
+                                            "value": "false"
+                                        },
+                                        "StringCustomFieldRef__custcol_c1_po_quantity": {
+                                            "value": "1"
+                                        },
+                                        "SelectCustomFieldRef__custcol_c1_manufacturer": {
+                                            "value": {
+                                                "name": "UNKNOWN"
+                                            }
+                                        },
+                                        "SelectCustomFieldRef__cseg_c1_pl_segment": {
+                                            "value": {
+                                                "name": "5 Maintenance In House"
+                                            }
+                                        },
+                                        "SelectCustomFieldRef__custcol_c1_p_l_sub_segment": {
+                                            "value": {
+                                                "name": "T&M"
+                                            }
+                                        },
+                                        "SelectCustomFieldRef__cseg_c1_line_of_bus": {
+                                            "value": {
+                                                "name": "99 Other"
+                                            }
+                                        },
+                                        "SelectCustomFieldRef__cseg_c1_practice": {
+                                            "value": {
+                                                "name": "54 Modern Workplace : 541 Modern Workplace"
+                                            }
+                                        },
+                                        "BooleanCustomFieldRef__custcol_c1phyisicalitem": {
+                                            "value": "false"
+                                        },
+                                        "BooleanCustomFieldRef__custcol_c1_special_bid": {
+                                            "value": "false"
+                                        }
+                                    }
+                                }
+                            },
+                            "customFieldList": {
+                                "SelectCustomFieldRef__custbody_c1_resourcetype": {
+                                    "value": {
+                                        "name": "External"
+                                    }
+                                },
+                                "DateCustomFieldRef__custbody_c1_itsmenddate": {
+                                    "value": "2023-11-15T10:00:00.000-08:00"
+                                },
+                                "BooleanCustomFieldRef__custbody_imported_from_celigo": {
+                                    "value": "false"
+                                },
+                                "BooleanCustomFieldRef__custbody_po_hold": {
+                                    "value": "false"
+                                },
+                                "SelectCustomFieldRef__custbody_nsts_gaw_created_by": {
+                                    "value": {
+                                        "name": "Integration, SVC NetSuite"
+                                    }
+                                },
+                                "StringCustomFieldRef__custbody_c1_duns": {
+                                    "value": "82-541-0319"
+                                },
+                                "BooleanCustomFieldRef__custbody_c1_alternate_shipping_info": {
+                                    "value": "false"
+                                },
+                                "BooleanCustomFieldRef__custbody_nsts_gaw_is_delegated": {
+                                    "value": "false"
+                                },
+                                "SelectCustomFieldRef__custbody_c1_customer": {
+                                    "value": {
+                                        "name": "SPSCHISOL0001 Chime Solutions"
+                                    }
+                                },
+                                "SelectCustomFieldRef__custbody_c1_poid": {
+                                    "value": {
+                                        "name": "Purchase Order #PO60012960"
+                                    }
+                                },
+                                "StringCustomFieldRef__custbody_c1_internalcomments": {
+                                    "value": "| dddd"
+                                },
+                                "DateCustomFieldRef__custbody_esc_created_date": {
+                                    "value": "2023-11-14T22:00:00.000-08:00"
+                                },
+                                "BooleanCustomFieldRef__custbody_c1_advreplacementpo": {
+                                    "value": "false"
+                                },
+                                "StringCustomFieldRef__custbody_c1_customer_name": {
+                                    "value": "Chime Solutions"
+                                },
+                                "BooleanCustomFieldRef__custbody_celigo_vpm_exported_payment": {
+                                    "value": "false"
+                                },
+                                "SelectCustomFieldRef__custbody_c1_shipping_option": {
+                                    "value": {
+                                        "name": "Allow Backorders"
+                                    }
+                                },
+                                "SelectCustomFieldRef__custbodyintegrationstatus": {
+                                    "value": {
+                                        "name": "Ready"
+                                    }
+                                },
+                                "SelectCustomFieldRef__custbodyc1_subscription": {
+                                    "value": {
+                                        "name": "CSC ITSM Ticket - SPSCHISOL0001"
+                                    }
+                                },
+                                "BooleanCustomFieldRef__custbody_c1_pre_approved": {
+                                    "value": "false"
+                                },
+                                "BooleanCustomFieldRef__custbody_c1_wffp_eligible": {
+                                    "value": "false"
+                                },
+                                "BooleanCustomFieldRef__custbody_c1_bill_3rd_party": {
+                                    "value": "false"
+                                },
+                                "BooleanCustomFieldRef__custbody_cash_register": {
+                                    "value": "false"
+                                },
+                                "SelectCustomFieldRef__custbody_wffp_acct": {
+                                    "value": {
+                                        "name": "20011 WFFP - C1 Inc"
+                                    }
+                                },
+                                "SelectCustomFieldRef__custbody_c1_ssr_name": {
+                                    "value": {
+                                        "name": "CSC Parts Team"
+                                    }
+                                },
+                                "DateCustomFieldRef__custbody_esc_last_modified_date": {
+                                    "value": "2023-11-30T22:00:00.000-08:00"
+                                },
+                                "BooleanCustomFieldRef__custbody_c1_billablestatus": {
+                                    "value": "true"
+                                },
+                                "StringCustomFieldRef__custbodyc1_subscription_id": {
+                                    "value": "127104"
+                                },
+                                "SelectCustomFieldRef__custbody_nsts_gaw_tran_requestor": {
+                                    "value": {
+                                        "name": "Kundu, Shiuli"
+                                    }
+                                },
+                                "BooleanCustomFieldRef__custbody_c1_deliveryconfirm": {
+                                    "value": "false"
+                                },
+                                "SelectCustomFieldRef__custbody_c1_po_type": {
+                                    "value": {
+                                        "name": "C1 Drop Ship"
+                                    }
+                                },
+                                "DateCustomFieldRef__custbody_c1_itsmstartdate": {
+                                    "value": "2023-11-15T08:39:48.000-08:00"
+                                },
+                                "SelectCustomFieldRef__custbody_c1_po_matrix": {
+                                    "value": {
+                                        "name": "External PO"
+                                    }
+                                },
+                                "StringCustomFieldRef__custbody_c1_related_po": {
+                                    "value": "PO60012960"
+                                },
+                                "BooleanCustomFieldRef__custbody_nondeductible_processed": {
+                                    "value": "false"
+                                },
+                                "StringCustomFieldRef__custbody_c1_itsmponum": {
+                                    "value": "IV-188548"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "getResponse": {
+                    "readResponse": {
+                        "status": null,
+                        "record": {
+                            "createdDate": "2023-11-30T11:51:04.000-08:00",
+                            "lastModifiedDate": "2023-12-01T12:57:14.000-08:00",
+                            "customForm": {
+                                "name": "C1 External Purchase Order"
+                            },
+                            "entity": {
+                                "name": "COMNET COMMUNICATIONS LLC (V-COMCOM0012)"
+                            },
+                            "tranDate": "2023-11-29T22:00:00.000-08:00",
+                            "tranId": "PO60012972",
+                            "terms": {
+                                "name": "Net 50"
+                            },
+                            "approvalStatus": {
+                                "name": "Approved"
+                            },
+                            "exchangeRate": "1.0",
+                            "currencyName": "USD",
+                            "toBePrinted": "false",
+                            "toBeEmailed": "false",
+                            "email": "pwilliamson@comnetcomm.com",
+                            "toBeFaxed": "false",
+                            "fax": "(203) 794-8063",
+                            "currency": {
+                                "name": "USD"
+                            },
+                            "shippingAddress": {
+                                "country": "_unitedStates",
+                                "city": "Kansas City",
+                                "state": "MO",
+                                "zip": "64102-1069",
+                                "addrText": "BlueScope Buildings\n1540 GENESSEE ST\nKANSAS CITY MO 64102-1069\nUS",
+                                "override": "true",
+                                "customFieldList": {
+                                    "BooleanCustomFieldRef__custrecord_c1_address_verified": {
+                                        "value": "false"
+                                    },
+                                    "BooleanCustomFieldRef__custrecord_c1_inactiveaddress": {
+                                        "value": "false"
+                                    },
+                                    "BooleanCustomFieldRef__custrecord_sureaddress_isaddresvalidated": {
+                                        "value": "false"
+                                    }
+                                }
+                            },
+                            "shipIsResidential": "false",
+                            "total": "112.0",
+                            "class": {
+                                "name": "375 Integration Partners"
+                            },
+                            "location": {
+                                "name": "Drop Ship C1 Inc : 1501 Drop Ship C1 Inc"
+                            },
+                            "subsidiary": {
+                                "name": "Inc."
+                            },
+                            "status": "Pending Bill",
+                            "itemList": {
+                                "item": {
+                                    "item": {
+                                        "name": "CABLE1000"
+                                    },
+                                    "line": "1",
+                                    "quantityReceived": "1.0",
+                                    "quantityBilled": "0.0",
+                                    "quantity": "1.0",
+                                    "description": "CABELS &CONNECTORS",
+                                    "rate": "112.00",
+                                    "amount": "112.0",
+                                    "location": {
+                                        "name": "Drop Ship C1 Inc : 1501 Drop Ship C1 Inc"
+                                    },
+                                    "isClosed": "false",
+                                    "customFieldList": {
+                                        "LongCustomFieldRef__custcol_c1_line_number": {
+                                            "value": "1"
+                                        },
+                                        "BooleanCustomFieldRef__custcol_c1_variable_billing": {
+                                            "value": "false"
+                                        },
+                                        "StringCustomFieldRef__custcol_c1_po_quantity": {
+                                            "value": "1"
+                                        },
+                                        "SelectCustomFieldRef__custcolzab_term": {
+                                            "value": {
+                                                "name": "Period"
+                                            }
+                                        },
+                                        "SelectCustomFieldRef__custcol_c1_manufacturer": {
+                                            "value": {
+                                                "name": "COMNET"
+                                            }
+                                        },
+                                        "SelectCustomFieldRef__cseg_c1_pl_segment": {
+                                            "value": {
+                                                "name": "1 Hardware New"
+                                            }
+                                        },
+                                        "SelectCustomFieldRef__custcol_c1_p_l_sub_segment": {
+                                            "value": {
+                                                "name": "Hardware"
+                                            }
+                                        },
+                                        "SelectCustomFieldRef__cseg_c1_line_of_bus": {
+                                            "value": {
+                                                "name": "99 Other"
+                                            }
+                                        },
+                                        "SelectCustomFieldRef__cseg_c1_practice": {
+                                            "value": {
+                                                "name": "58 Enterprise Networkng : 581 Enterprise Networking"
+                                            }
+                                        },
+                                        "BooleanCustomFieldRef__custcol_c1phyisicalitem": {
+                                            "value": "true"
+                                        },
+                                        "BooleanCustomFieldRef__custcol_c1_special_bid": {
+                                            "value": "false"
+                                        },
+                                        "SelectCustomFieldRef__custcolc1_vendor_billing_frequency": {
+                                            "value": {
+                                                "name": "Prepaid"
+                                            }
+                                        },
+                                        "StringCustomFieldRef__custcol_c1_avaya_sold_to": {
+                                            "value": "51696337"
+                                        },
+                                        "LongCustomFieldRef__custcol_c1_contract_term_in_months": {
+                                            "value": "0"
+                                        },
+                                        "SelectCustomFieldRef__custcolc1_peg_line": {
+                                            "value": {
+                                                "name": "CABELS &CONNECTORS"
+                                            }
+                                        },
+                                        "LongCustomFieldRef__custcol_c1_peglineid": {
+                                            "value": "513058"
+                                        },
+                                        "SelectCustomFieldRef__custcolc1_fulfillment_request": {
+                                            "value": {
+                                                "name": "11398"
+                                            }
+                                        },
+                                        "SelectCustomFieldRef__custcolc1_subscription": {
+                                            "value": {
+                                                "name": "jv 1121  Regression Testing after rebranding-Copy"
+                                            }
+                                        },
+                                        "StringCustomFieldRef__custcol_c1_design_number": {
+                                            "value": "- None -"
+                                        }
+                                    }
+                                }
+                            },
+                            "customFieldList": {
+                                "SelectCustomFieldRef__custbody_c1_superapprover": {
+                                    "value": {
+                                        "name": "Wangberg, Melissa"
+                                    }
+                                },
+                                "SelectCustomFieldRef__custbody_c1_installaddressselect": {
+                                    "value": {
+                                        "name": "SHIP8 - Kansas City MO"
+                                    }
+                                },
+                                "BooleanCustomFieldRef__custbody_imported_from_celigo": {
+                                    "value": "false"
+                                },
+                                "BooleanCustomFieldRef__custbody_po_hold": {
+                                    "value": "false"
+                                },
+                                "SelectCustomFieldRef__custbody_nsts_gaw_created_by": {
+                                    "value": {
+                                        "name": "Millen, Ashley"
+                                    }
+                                },
+                                "StringCustomFieldRef__custbody_c1_duns": {
+                                    "value": "82-541-0319"
+                                },
+                                "BooleanCustomFieldRef__custbody_c1_alternate_shipping_info": {
+                                    "value": "false"
+                                },
+                                "StringCustomFieldRef__custbody_c1_link_to_opp_docs": {
+                                    "value": "https://DevProServices.ConvergeOne.com//Redirector?Entity=CrmRedirect&Id=9b3ba955-c0d7-4932-b95c-9c49a3bfa10f&Item=Directory"
+                                },
+                                "BooleanCustomFieldRef__custbody_nsts_gaw_is_delegated": {
+                                    "value": "false"
+                                },
+                                "StringCustomFieldRef__custbody_c1_custcontactemail": {
+                                    "value": "rebecca.mountjoy@bsbna.com"
+                                },
+                                "SelectCustomFieldRef__custbody_c1_customer": {
+                                    "value": {
+                                        "name": "IPCBLUBUI0001 BlueScope Buildings"
+                                    }
+                                },
+                                "SelectCustomFieldRef__custbody_c1_poid": {
+                                    "value": {
+                                        "name": "Purchase Order #PO60012972"
+                                    }
+                                },
+                                "StringCustomFieldRef__custbody_c1_customer_po": {
+                                    "value": "jv 1121 936"
+                                },
+                                "DateCustomFieldRef__custbody_esc_created_date": {
+                                    "value": "2023-11-29T22:00:00.000-08:00"
+                                },
+                                "BooleanCustomFieldRef__custbody_c1_advreplacementpo": {
+                                    "value": "false"
+                                },
+                                "SelectCustomFieldRef__custbody_c1_po_approver_9": {
+                                    "value": {
+                                        "name": "Barton, Denise"
+                                    }
+                                },
+                                "SelectCustomFieldRef__custbody_c1_po_approver_7": {
+                                    "value": {
+                                        "name": "Tozzi, Salvatore"
+                                    }
+                                },
+                                "SelectCustomFieldRef__custbody_c1_po_approver_8": {
+                                    "value": {
+                                        "name": "Barton, Denise"
+                                    }
+                                },
+                                "SelectCustomFieldRef__custbody_c1_po_approver_6": {
+                                    "value": {
+                                        "name": "Gonikman, Anna"
+                                    }
+                                },
+                                "StringCustomFieldRef__custbody_c1_customer_name": {
+                                    "value": "BlueScope Buildings"
+                                },
+                                "SelectCustomFieldRef__custbody_c1_po_approver_10": {
+                                    "value": {
+                                        "name": "King, Gail"
+                                    }
+                                },
+                                "BooleanCustomFieldRef__custbody_celigo_vpm_exported_payment": {
+                                    "value": "false"
+                                },
+                                "SelectCustomFieldRef__custbody_c1_shipping_option": {
+                                    "value": {
+                                        "name": "Allow Backorders"
+                                    }
+                                },
+                                "SelectCustomFieldRef__custbodyintegrationstatus": {
+                                    "value": {
+                                        "name": "Ready"
+                                    }
+                                },
+                                "SelectCustomFieldRef__custbodyc1_subscription": {
+                                    "value": {
+                                        "name": "jv 1121  Regression Testing after rebranding-Copy"
+                                    }
+                                },
+                                "BooleanCustomFieldRef__custbody_c1_pre_approved": {
+                                    "value": "false"
+                                },
+                                "StringCustomFieldRef__custbody_c1_requestor_line_of_business": {
+                                    "value": "11 Avaya"
+                                },
+                                "BooleanCustomFieldRef__custbody_c1_wffp_eligible": {
+                                    "value": "false"
+                                },
+                                "BooleanCustomFieldRef__custbody_c1_bill_3rd_party": {
+                                    "value": "false"
+                                },
+                                "BooleanCustomFieldRef__custbody_cash_register": {
+                                    "value": "false"
+                                },
+                                "SelectCustomFieldRef__custbody_c1_requestor_region": {
+                                    "value": {
+                                        "name": "392 Central Shared Services"
+                                    }
+                                },
+                                "SelectCustomFieldRef__custbody_wffp_acct": {
+                                    "value": {
+                                        "name": "20011 WFFP - C1 Inc"
+                                    }
+                                },
+                                "SelectCustomFieldRef__custbody_c1_ssr_name": {
+                                    "value": {
+                                        "name": "Collins, Mary"
+                                    }
+                                },
+                                "SelectCustomFieldRef__custbody_c1_purchasing_queue": {
+                                    "value": {
+                                        "name": "PO Ready"
+                                    }
+                                },
+                                "DateCustomFieldRef__custbody_esc_last_modified_date": {
+                                    "value": "2023-11-30T22:00:00.000-08:00"
+                                },
+                                "StringCustomFieldRef__custbody_c1_install_location": {
+                                    "value": "BlueScope Buildings\n1540 GENESSEE ST\nKANSAS CITY MO 64102-1069\nUS"
+                                },
+                                "BooleanCustomFieldRef__custbody_c1_billablestatus": {
+                                    "value": "false"
+                                },
+                                "StringCustomFieldRef__custbodyc1_subscription_id": {
+                                    "value": "128504"
+                                },
+                                "SelectCustomFieldRef__custbody_nsts_gaw_tran_requestor": {
+                                    "value": {
+                                        "name": "Collins, Mary"
+                                    }
+                                },
+                                "BooleanCustomFieldRef__custbody_c1_deliveryconfirm": {
+                                    "value": "false"
+                                },
+                                "StringCustomFieldRef__custbody_c1_custcontactno": {
+                                    "value": "8169683065"
+                                },
+                                "SelectCustomFieldRef__custbody_c1_po_type": {
+                                    "value": {
+                                        "name": "C1 Drop Ship"
+                                    }
+                                },
+                                "SelectCustomFieldRef__custbody_c1_po_matrix": {
+                                    "value": {
+                                        "name": "External PO"
+                                    }
+                                },
+                                "StringCustomFieldRef__custbody_c1_custcontactname": {
+                                    "value": "Rebecca Mountjoy"
+                                },
+                                "StringCustomFieldRef__custbody_c1_related_po": {
+                                    "value": "PO60012972"
+                                },
+                                "BooleanCustomFieldRef__custbody_nondeductible_processed": {
+                                    "value": "false"
+                                },
+                                "StringCustomFieldRef__custbody_c1_requestor_cc": {
+                                    "value": "1514 MASR - Field"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

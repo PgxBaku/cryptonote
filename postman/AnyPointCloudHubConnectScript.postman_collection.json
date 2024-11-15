@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "6652345d-196e-4fc7-a772-7818f9fc0219",
+		"name": "AnyPointCloudHubConnectScript",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15501321"
+	},
+	"item": [
+		{
+			"name": "GetBearerToken",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const options = {\r",
+							"    url: pm.environment.get(\"OAuth2_Url\"),\r",
+							"    method: 'POST',\r",
+							"    header:{\r",
+							"        'Accept': '*/*',\r",
+							"        'Content-Type': 'application/x-www-form-urlencoded'\r",
+							"    },\r",
+							"    body: {\r",
+							"        mode: 'urlencoded',\r",
+							"        urlencoded:[\r",
+							"            { key: 'client_id', value: pm.environment.get(\"OAuth2_clientId\")},\r",
+							"            { key: 'client_secret', value: pm.environment.get(\"OAuth2_secretId\")},\r",
+							"            { key: 'grant_type', value: 'client_credentials'}\r",
+							"        ]        \r",
+							"    }\r",
+							"};\r",
+							"\r",
+							"pm.sendRequest(options, function (err, res) {\r",
+							"    console.log(\"token = \"  + res.json().access_token)\r",
+							"    pm.environment.set(\"mule_access_token\", res.json().access_token);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const options = {\r",
+							"    url: pm.environment.get(\"OAuth2_Url\"),\r",
+							"    method: 'POST',\r",
+							"    header:{\r",
+							"        'Accept': '*/*',\r",
+							"        'Content-Type': 'application/x-www-form-urlencoded'\r",
+							"    },\r",
+							"    body: {\r",
+							"        mode: 'urlencoded',\r",
+							"        urlencoded:[\r",
+							"            { key: 'client_id', value: pm.environment.get(\"OAuth2_clientId\")},\r",
+							"            { key: 'client_secret', value: pm.environment.get(\"OAuth2_secretId\")},\r",
+							"            { key: 'grant_type', value: 'client_credentials'}\r",
+							"        ]        \r",
+							"    }\r",
+							"};\r",
+							"\r",
+							"pm.sendRequest(options, function (err, res) {\r",
+							"    console.log(\"token = \"  + res.json().access_token)\r",
+							"    pm.environment.set(\"mule_access_token\", res.json().access_token);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{mule_access_token}}",
+						"uuid": "b382b821-e8ad-4d0e-9737-ada1981c65fe"
+					},
+					{
+						"key": "X-ANYPNT-ORG-ID",
+						"value": "294056d3-d133-4294-8ee4-ebd60ed7dc79",
+						"uuid": "c33d4cdd-5e5f-4362-aa26-41c4c62a124c"
+					},
+					{
+						"key": "X-ANYPNT-ENV-ID",
+						"value": "718cde3b-02f0-4129-b4b3-49766d67bc3c",
+						"uuid": "24fa2fde-d370-44d7-a801-cb90d761cac8"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/cloudhub/api/v2/applications/c1-iti-cw-masterdata-sync-papi-v1/instances/65381ea32ea1d868e5c76a38-0/logs?orderByDate=DESC",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"cloudhub",
+						"api",
+						"v2",
+						"applications",
+						"c1-iti-cw-masterdata-sync-papi-v1",
+						"instances",
+						"65381ea32ea1d868e5c76a38-0",
+						"logs"
+					],
+					"query": [
+						{
+							"key": "orderByDate",
+							"value": "DESC"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

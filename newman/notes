@@ -1,0 +1,1283 @@
+
+
+Runtime Manager
+IT Internal
+PX
+Anypoint Platform
+
+Code Builder (BETA)
+Design Center
+Exchange
+Management Center
+Access Management
+API Manager
+Runtime Manager
+API Governance
+MQ
+Visualizer
+Monitoring
+Secrets Manager
+Recently Visited
+Destinations
+Anypoint MQ
+1 minute ago
+iti-crm-ccw-masterdata-sync-q
+Anypoint MQ Destination
+1 minute ago
+iti-ivanti-lg-processing-in-retry-q
+Anypoint MQ Destination
+4 hours ago
+iti-mlog-in
+Anypoint MQ Destination
+5 hours ago
+iti-inharmony-in
+Anypoint MQ Destination
+13 hours ago
+iti-inharmony-in-retry
+Anypoint MQ Destination
+18 hours ago
+PX_PROD
+Visualizer View
+1 day ago
+Applications
+Dashboard
+Insight
+Logs
+Object Store
+Queues
+Schedules
+Settings
+c1-iti-cw-masterdata-sync-papi-v1
+22:57:45.408 10/17/2023 Worker-0
+Logs are kept for 30 days or up to 100 MB
+Search
+Advanced
+09:29:37.481     10/26/2023     Worker-1     [MuleRuntime].uber.1259: [c1-iti-cw-masterdata-sync-papi-v1].address-syncFlow.CPU_LITE @4c8231ba     INFO
+event:567e75c0-7409-11ee-b82d-069c2564e769 sizeof message raw result set 1
+09:29:37.482     10/26/2023     Worker-1     [MuleRuntime].uber.1259: [c1-iti-cw-masterdata-sync-papi-v1].address-syncFlow.CPU_INTENSIVE @58da1477     INFO
+event:567e75c0-7409-11ee-b82d-069c2564e769 get company query : {
+  "GenericRequest": {
+    "ClientId": "9c6863e2-7984-43ca-8f97-47786a4dccfd",
+    "Accept": "application/vnd.connectwise.com+json; version = 2020.4",
+    "SystemName": "WrightCore_CCW",
+    "Url": "https://na.myconnectwise.net/v2022_2/apis/3.0",
+    "Method": "GET",
+    "Path": "/company/companies",
+    "Query": "?customfieldconditions=caption=%22C1%20Company%20ID%22%20and%20value=%22SWCISCOCO001%22",
+    "Payload": {
+      
+    }
+  }
+}
+09:29:37.505     10/26/2023     Worker-3     [MuleRuntime].uber.1072: [c1-iti-cw-masterdata-sync-papi-v1].processBatch-syncFlow.CPU_INTENSIVE @5051772     INFO
+event:5e3a5210-73fb-11ee-9ce0-0646ab281fa3 "CRM/Sync/Contact"
+09:29:37.505     10/26/2023     Worker-3     [MuleRuntime].uber.1071: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_LITE @6b194013     INFO
+event:5e3a5210-73fb-11ee-9ce0-0646ab281fa3 start of contact flow
+09:29:37.505     10/26/2023     Worker-3     [MuleRuntime].uber.1071: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_LITE @6b194013     INFO
+event:5e3a5210-73fb-11ee-9ce0-0646ab281fa3 65026
+09:29:37.506     10/26/2023     Worker-3     [MuleRuntime].uber.1072: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @11bbdfdf     INFO
+event:5e3a5210-73fb-11ee-9ce0-0646ab281fa3 messageRaw request {
+  "GenericRequest": {
+    "Server": "OIESQL",
+    "Database": "OIE",
+    "Instance": "",
+    "Port": 1433,
+    "StoredProcedure": "dbo.usp_OIE_Ccw_MessageRawData_Sel",
+    "Params": {
+      "@MsgQueueId": 65026
+    }
+  }
+}
+09:29:37.510     10/26/2023     Worker-3     [MuleRuntime].uber.1071: [c1-iti-cw-masterdata-sync-papi-v1].address-syncFlow.CPU_LITE @327c0f51     INFO
+event:8b3cfdc0-7406-11ee-9ce0-0646ab281fa3 sizeof message raw result set 1
+09:29:37.511     10/26/2023     Worker-3     [MuleRuntime].uber.1071: [c1-iti-cw-masterdata-sync-papi-v1].address-syncFlow.CPU_INTENSIVE @4ace2351     INFO
+event:8b3cfdc0-7406-11ee-9ce0-0646ab281fa3 get company query : {
+  "GenericRequest": {
+    "ClientId": "9c6863e2-7984-43ca-8f97-47786a4dccfd",
+    "Accept": "application/vnd.connectwise.com+json; version = 2020.4",
+    "SystemName": "WrightCore_CCW",
+    "Url": "https://na.myconnectwise.net/v2022_2/apis/3.0",
+    "Method": "GET",
+    "Path": "/company/companies",
+    "Query": "?customfieldconditions=caption=%22C1%20Company%20ID%22%20and%20value=%22SWCISCOCO001%22",
+    "Payload": {
+      
+    }
+  }
+}
+09:29:37.542     10/26/2023     Worker-5     [MuleRuntime].uber.1232: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @57551183     INFO
+event:92f1fc40-73f8-11ee-a4a1-06757cb5e843 cw get contact request {
+  "GenericRequest": {
+    "ClientId": "9c6863e2-7984-43ca-8f97-47786a4dccfd",
+    "Accept": "application/vnd.connectwise.com+json; version = 2020.4",
+    "SystemName": "WrightCore_CCW",
+    "Url": "https://na.myconnectwise.net/v2022_2/apis/3.0",
+    "Method": "GET",
+    "Path": "/company/contacts",
+    "Query": "?conditions=company/id=23705&customfieldconditions=caption=%22C1%20Contact%20ID%22%20and%20value=%224b09b875-526f-e811-80d4-0050568c4bab%22",
+    "Payload": {
+      
+    }
+  }
+}
+09:29:37.631     10/26/2023     Worker-1     [MuleRuntime].uber.1259: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_LITE @6decd9a8     INFO
+event:bffa9b60-7403-11ee-b82d-069c2564e769 ccwContactStatus false
+09:29:37.632     10/26/2023     Worker-1     [MuleRuntime].uber.1262: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @7d95d5c2     INFO
+event:bffa9b60-7403-11ee-b82d-069c2564e769 statusOfContact: false
+09:29:37.632     10/26/2023     Worker-1     [MuleRuntime].uber.1259: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @7d95d5c2     INFO
+event:bffa9b60-7403-11ee-b82d-069c2564e769 {
+  "GenericRequest": {
+    "ClientId": "9c6863e2-7984-43ca-8f97-47786a4dccfd",
+    "Accept": "application/vnd.connectwise.com+json; version = 2020.4",
+    "SystemName": "WrightCore_CCW",
+    "Url": "https://na.myconnectwise.net/v2022_2/apis/3.0",
+    "Method": "PATCH",
+    "Path": "/company/contacts/34218/",
+    "Query": "",
+    "Payload": [
+      {
+        "op": "replace",
+        "path": "firstName",
+        "value": "Timmy"
+      },
+      {
+        "op": "replace",
+        "path": "lastName",
+        "value": "Yee"
+      },
+      {
+        "op": "replace",
+        "path": "company",
+        "value": {
+          "id": 23705,
+          "name": "Cisco Systems Inc."
+        }
+      },
+      {
+        "op": "replace",
+        "path": "title",
+        "value": ""
+      },
+      {
+        "op": "replace",
+        "path": "inactiveFlag",
+        "value": false
+      }
+    ]
+  }
+}
+09:29:37.637     10/26/2023     Worker-1     [MuleRuntime].uber.1262: [c1-iti-cw-masterdata-sync-papi-v1].address-syncFlow.CPU_INTENSIVE @58da1477     INFO
+event:567e75c0-7409-11ee-b82d-069c2564e769 Log cw get company site request : {
+  "GenericRequest": {
+    "ClientId": "9c6863e2-7984-43ca-8f97-47786a4dccfd",
+    "Accept": "application/vnd.connectwise.com+json; version = 2020.4",
+    "SystemName": "WrightCore_CCW",
+    "Url": "https://na.myconnectwise.net/v2022_2/apis/3.0",
+    "Method": "GET",
+    "Path": "/company/companies/23705/sites",
+    "Query": "?customfieldconditions=caption=%22C1%20Ship%20ID%22%20and%20value=%2266953%22",
+    "Payload": {
+      
+    }
+  }
+}
+09:29:37.649     10/26/2023     Worker-0     [MuleRuntime].uber.1532: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_LITE @7c8b3f3b     INFO
+event:297699f0-73fe-11ee-9155-0232c4076f5d sizeof message raw result set 1
+09:29:37.652     10/26/2023     Worker-0     [MuleRuntime].uber.1532: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @30c0ec07     INFO
+event:297699f0-73fe-11ee-9155-0232c4076f5d get company query : {
+  "GenericRequest": {
+    "ClientId": "9c6863e2-7984-43ca-8f97-47786a4dccfd",
+    "Accept": "application/vnd.connectwise.com+json; version = 2020.4",
+    "SystemName": "WrightCore_CCW",
+    "Url": "https://na.myconnectwise.net/v2022_2/apis/3.0",
+    "Method": "GET",
+    "Path": "/company/companies",
+    "Query": "?customfieldconditions=caption=%22C1%20Company%20ID%22%20and%20value=%22SWCISCOCO001%22",
+    "Payload": {
+      
+    }
+  }
+}
+09:29:37.678     10/26/2023     Worker-0     [MuleRuntime].uber.1543: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @30c0ec07     INFO
+event:f4b8ae30-7400-11ee-9155-0232c4076f5d {
+  "GenericRequest": {
+    "ClientId": "9c6863e2-7984-43ca-8f97-47786a4dccfd",
+    "Accept": "application/vnd.connectwise.com+json; version = 2020.4",
+    "SystemName": "WrightCore_CCW",
+    "Url": "https://na.myconnectwise.net/v2022_2/apis/3.0",
+    "Method": "GET",
+    "Path": "/company/contacts/35540/communications",
+    "Query": "",
+    "Payload": {
+      
+    }
+  }
+}
+09:29:37.703     10/26/2023     Worker-5     [MuleRuntime].uber.1231: [c1-iti-cw-masterdata-sync-papi-v1].processBatch-syncFlow.CPU_INTENSIVE @439b368a     INFO
+event:c7b00f10-73f5-11ee-a4a1-06757cb5e843 "CRM/Sync/Contact"
+09:29:37.704     10/26/2023     Worker-5     [MuleRuntime].uber.1232: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_LITE @70b5da30     INFO
+event:c7b00f10-73f5-11ee-a4a1-06757cb5e843 start of contact flow
+09:29:37.704     10/26/2023     Worker-5     [MuleRuntime].uber.1232: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_LITE @70b5da30     INFO
+event:c7b00f10-73f5-11ee-a4a1-06757cb5e843 63225
+09:29:37.721     10/26/2023     Worker-3     [MuleRuntime].uber.1072: [c1-iti-cw-masterdata-sync-papi-v1].address-syncFlow.CPU_INTENSIVE @4ace2351     INFO
+event:8b3cfdc0-7406-11ee-9ce0-0646ab281fa3 Log cw get company site request : {
+  "GenericRequest": {
+    "ClientId": "9c6863e2-7984-43ca-8f97-47786a4dccfd",
+    "Accept": "application/vnd.connectwise.com+json; version = 2020.4",
+    "SystemName": "WrightCore_CCW",
+    "Url": "https://na.myconnectwise.net/v2022_2/apis/3.0",
+    "Method": "GET",
+    "Path": "/company/companies/23705/sites",
+    "Query": "?customfieldconditions=caption=%22C1%20Ship%20ID%22%20and%20value=%22SHIP326%22",
+    "Payload": {
+      
+    }
+  }
+}
+09:29:37.759     10/26/2023     Worker-0     [MuleRuntime].uber.1543: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @30c0ec07     INFO
+event:f4b8ae30-7400-11ee-9155-0232c4076f5d update communication: {
+  "GenericRequest": {
+    "ClientId": "9c6863e2-7984-43ca-8f97-47786a4dccfd",
+    "Accept": "application/vnd.connectwise.com+json; version = 2020.4",
+    "SystemName": "WrightCore_CCW",
+    "Url": "https://na.myconnectwise.net/v2022_2/apis/3.0",
+    "Method": "PATCH",
+    "Path": "/company/contacts/35540/communications/98474",
+    "Query": "",
+    "Payload": [
+      {
+        "op": "replace",
+        "path": "value",
+        "value": "1 408 5276"
+      }
+    ]
+  }
+}
+09:29:37.765     10/26/2023     Worker-3     [MuleRuntime].uber.1072: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_LITE @6b194013     INFO
+event:5e3a5210-73fb-11ee-9ce0-0646ab281fa3 sizeof message raw result set 1
+09:29:37.767     10/26/2023     Worker-3     [MuleRuntime].uber.1072: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @11bbdfdf     INFO
+event:5e3a5210-73fb-11ee-9ce0-0646ab281fa3 get company query : {
+  "GenericRequest": {
+    "ClientId": "9c6863e2-7984-43ca-8f97-47786a4dccfd",
+    "Accept": "application/vnd.connectwise.com+json; version = 2020.4",
+    "SystemName": "WrightCore_CCW",
+    "Url": "https://na.myconnectwise.net/v2022_2/apis/3.0",
+    "Method": "GET",
+    "Path": "/company/companies",
+    "Query": "?customfieldconditions=caption=%22C1%20Company%20ID%22%20and%20value=%22SWCISCOCO001%22",
+    "Payload": {
+      
+    }
+  }
+}
+09:29:37.802     10/26/2023     Worker-1     [MuleRuntime].uber.1259: [c1-iti-cw-masterdata-sync-papi-v1].address-syncFlow.CPU_LITE @4c8231ba     INFO
+event:567e75c0-7409-11ee-b82d-069c2564e769 ccwSiteStatus false
+09:29:37.803     10/26/2023     Worker-1     [MuleRuntime].uber.1262: [c1-iti-cw-masterdata-sync-papi-v1].address-syncFlow.CPU_INTENSIVE @58da1477     INFO
+event:567e75c0-7409-11ee-b82d-069c2564e769 {
+  "GenericRequest": {
+    "Server": "OIESQL",
+    "Database": "OIE_ClientData",
+    "Instance": "",
+    "Port": "1433",
+    "StoredProcedure": "dbo.usp_OIE_DataTranslation_Sel",
+    "Params": {
+      "@AppSource": "CRM",
+      "@AppDestination": "CW",
+      "@BusinessTypeName": "State",
+      "@DataInputKey": "CA"
+    }
+  }
+}
+09:29:37.829     10/26/2023     Worker-3     [MuleRuntime].uber.1072: [c1-iti-cw-masterdata-sync-papi-v1].address-syncFlow.CPU_LITE @327c0f51     INFO
+event:8b3cfdc0-7406-11ee-9ce0-0646ab281fa3 ccwSiteStatus false
+09:29:37.829     10/26/2023     Worker-3     [MuleRuntime].uber.1071: [c1-iti-cw-masterdata-sync-papi-v1].address-syncFlow.CPU_INTENSIVE @4ace2351     INFO
+event:8b3cfdc0-7406-11ee-9ce0-0646ab281fa3 {
+  "GenericRequest": {
+    "Server": "OIESQL",
+    "Database": "OIE_ClientData",
+    "Instance": "",
+    "Port": "1433",
+    "StoredProcedure": "dbo.usp_OIE_DataTranslation_Sel",
+    "Params": {
+      "@AppSource": "CRM",
+      "@AppDestination": "CW",
+      "@BusinessTypeName": "State",
+      "@DataInputKey": "TX"
+    }
+  }
+}
+09:29:37.830     10/26/2023     Worker-0     [MuleRuntime].uber.1546: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @30c0ec07     INFO
+event:297699f0-73fe-11ee-9155-0232c4076f5d cw get contact request {
+  "GenericRequest": {
+    "ClientId": "9c6863e2-7984-43ca-8f97-47786a4dccfd",
+    "Accept": "application/vnd.connectwise.com+json; version = 2020.4",
+    "SystemName": "WrightCore_CCW",
+    "Url": "https://na.myconnectwise.net/v2022_2/apis/3.0",
+    "Method": "GET",
+    "Path": "/company/contacts",
+    "Query": "?conditions=company/id=23705&customfieldconditions=caption=%22C1%20Contact%20ID%22%20and%20value=%2297763b7d-43e9-e911-80e1-0050568c4bab%22",
+    "Payload": {
+      
+    }
+  }
+}
+09:29:37.865     10/26/2023     Worker-0     [MuleRuntime].uber.1546: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @30c0ec07     INFO
+event:f4b8ae30-7400-11ee-9155-0232c4076f5d {
+  "GenericRequest": {
+    "Server": "OIESQL",
+    "Database": "OIE",
+    "Instance": "",
+    "Port": 1433,
+    "StoredProcedure": "dbo.usp_OIE_Ccw_MsgQueueTable_Status_Update",
+    "Params": {
+      "@MsgQueueId": 66427,
+      "@MsgNameSpace": "CRM/Sync/Contact",
+      "@ProcessedDate": "2023-10-26T14:29:37.865Z",
+      "@Status": "Processed",
+      "@Active": 0,
+      "@ErrorMsg": ""
+    }
+  }
+}
+09:29:37.948     10/26/2023     Worker-3     [MuleRuntime].uber.1072: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @11bbdfdf     INFO
+event:5e3a5210-73fb-11ee-9ce0-0646ab281fa3 cw get contact request {
+  "GenericRequest": {
+    "ClientId": "9c6863e2-7984-43ca-8f97-47786a4dccfd",
+    "Accept": "application/vnd.connectwise.com+json; version = 2020.4",
+    "SystemName": "WrightCore_CCW",
+    "Url": "https://na.myconnectwise.net/v2022_2/apis/3.0",
+    "Method": "GET",
+    "Path": "/company/contacts",
+    "Query": "?conditions=company/id=23705&customfieldconditions=caption=%22C1%20Contact%20ID%22%20and%20value=%2282618297-2f23-e911-80db-0050568c4bab%22",
+    "Payload": {
+      
+    }
+  }
+}
+09:29:38.010     10/26/2023     Worker-1     [MuleRuntime].uber.1259: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @7d95d5c2     INFO
+event:bffa9b60-7403-11ee-b82d-069c2564e769 {
+  "GenericRequest": {
+    "ClientId": "9c6863e2-7984-43ca-8f97-47786a4dccfd",
+    "Accept": "application/vnd.connectwise.com+json; version = 2020.4",
+    "SystemName": "WrightCore_CCW",
+    "Url": "https://na.myconnectwise.net/v2022_2/apis/3.0",
+    "Method": "GET",
+    "Path": "/company/contacts/34218/communications",
+    "Query": "",
+    "Payload": {
+      
+    }
+  }
+}
+09:29:38.076     10/26/2023     Worker-1     [MuleRuntime].uber.1259: [c1-iti-cw-masterdata-sync-papi-v1].address-syncFlow.CPU_LITE @4c8231ba     INFO
+event:567e75c0-7409-11ee-b82d-069c2564e769 "state" "CA"
+09:29:38.078     10/26/2023     Worker-1     [MuleRuntime].uber.1262: [c1-iti-cw-masterdata-sync-papi-v1].address-syncFlow.CPU_INTENSIVE @58da1477     INFO
+event:567e75c0-7409-11ee-b82d-069c2564e769 accountName "Cisco Systems Inc."
+09:29:38.079     10/26/2023     Worker-1     [MuleRuntime].uber.1259: [c1-iti-cw-masterdata-sync-papi-v1].address-syncFlow.CPU_INTENSIVE @58da1477     INFO
+event:567e75c0-7409-11ee-b82d-069c2564e769 {
+  "GenericRequest": {
+    "ClientId": "9c6863e2-7984-43ca-8f97-47786a4dccfd",
+    "Accept": "application/vnd.connectwise.com+json; version = 2020.4",
+    "SystemName": "WrightCore_CCW",
+    "Url": "https://na.myconnectwise.net/v2022_2/apis/3.0",
+    "Method": "PATCH",
+    "Path": "/company/companies/23705/sites/29232",
+    "Query": "",
+    "Payload": [
+      {
+        "op": "replace",
+        "path": "name",
+        "value": "2612  SAN"
+      },
+      {
+        "op": "replace",
+        "path": "phoneNumber",
+        "value": null
+      },
+      {
+        "op": "replace",
+        "path": "addressLine1",
+        "value": "2612  SAN JOSE SITE 5.1  SJ-30"
+      },
+      {
+        "op": "replace",
+        "path": "addressLine2",
+        "value": null
+      },
+      {
+        "op": "replace",
+        "path": "city",
+        "value": "MILPITAS"
+      },
+      {
+        "op": "replace",
+        "path": "stateReference",
+        "value": {
+          "identifier": "CA"
+        }
+      },
+      {
+        "op": "replace",
+        "path": "zip",
+        "value": "95035"
+      },
+      {
+        "op": "replace",
+        "path": "country",
+        "value": {
+          "name": "United States"
+        }
+      },
+      {
+        "op": "replace",
+        "path": "company",
+        "value": {
+          "name": "Cisco Systems Inc."
+        }
+      },
+      {
+        "op": "replace",
+        "path": "defaultShippingFlag",
+        "value": false
+      },
+      {
+        "op": "replace",
+        "path": "defaultBillingFlag",
+        "value": false
+      },
+      {
+        "op": "replace",
+        "path": "primaryAddressFlag",
+        "value": false
+      },
+      {
+        "op": "replace",
+        "path": "inactiveFlag",
+        "value": false
+      }
+    ]
+  }
+}
+09:29:38.106     10/26/2023     Worker-1     [MuleRuntime].uber.1262: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @7d95d5c2     INFO
+event:bffa9b60-7403-11ee-b82d-069c2564e769 update communication: {
+  "GenericRequest": {
+    "ClientId": "9c6863e2-7984-43ca-8f97-47786a4dccfd",
+    "Accept": "application/vnd.connectwise.com+json; version = 2020.4",
+    "SystemName": "WrightCore_CCW",
+    "Url": "https://na.myconnectwise.net/v2022_2/apis/3.0",
+    "Method": "PATCH",
+    "Path": "/company/contacts/34218/communications/95925",
+    "Query": "",
+    "Payload": [
+      {
+        "op": "replace",
+        "path": "value",
+        "value": "408 526-4000"
+      }
+    ]
+  }
+}
+09:29:38.155     10/26/2023     Worker-3     [MuleRuntime].uber.1072: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_LITE @6b194013     INFO
+event:5e3a5210-73fb-11ee-9ce0-0646ab281fa3 ccwContactStatus false
+09:29:38.155     10/26/2023     Worker-0     [MuleRuntime].uber.1546: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_LITE @7c8b3f3b     INFO
+event:297699f0-73fe-11ee-9155-0232c4076f5d ccwContactStatus false
+09:29:38.156     10/26/2023     Worker-3     [MuleRuntime].uber.1071: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @11bbdfdf     INFO
+event:5e3a5210-73fb-11ee-9ce0-0646ab281fa3 statusOfContact: false
+09:29:38.156     10/26/2023     Worker-3     [MuleRuntime].uber.1072: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @11bbdfdf     INFO
+event:5e3a5210-73fb-11ee-9ce0-0646ab281fa3 {
+  "GenericRequest": {
+    "ClientId": "9c6863e2-7984-43ca-8f97-47786a4dccfd",
+    "Accept": "application/vnd.connectwise.com+json; version = 2020.4",
+    "SystemName": "WrightCore_CCW",
+    "Url": "https://na.myconnectwise.net/v2022_2/apis/3.0",
+    "Method": "PATCH",
+    "Path": "/company/contacts/38479/",
+    "Query": "",
+    "Payload": [
+      {
+        "op": "replace",
+        "path": "firstName",
+        "value": "Mehar V"
+      },
+      {
+        "op": "replace",
+        "path": "lastName",
+        "value": "Simhadri"
+      },
+      {
+        "op": "replace",
+        "path": "company",
+        "value": {
+          "id": 23705,
+          "name": "Cisco Systems Inc."
+        }
+      },
+      {
+        "op": "replace",
+        "path": "title",
+        "value": ""
+      },
+      {
+        "op": "replace",
+        "path": "inactiveFlag",
+        "value": false
+      }
+    ]
+  }
+}
+09:29:38.156     10/26/2023     Worker-0     [MuleRuntime].uber.1543: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @30c0ec07     INFO
+event:297699f0-73fe-11ee-9155-0232c4076f5d statusOfContact: false
+09:29:38.157     10/26/2023     Worker-0     [MuleRuntime].uber.1546: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @30c0ec07     INFO
+event:297699f0-73fe-11ee-9155-0232c4076f5d {
+  "GenericRequest": {
+    "ClientId": "9c6863e2-7984-43ca-8f97-47786a4dccfd",
+    "Accept": "application/vnd.connectwise.com+json; version = 2020.4",
+    "SystemName": "WrightCore_CCW",
+    "Url": "https://na.myconnectwise.net/v2022_2/apis/3.0",
+    "Method": "PATCH",
+    "Path": "/company/contacts/36941/",
+    "Query": "",
+    "Payload": [
+      {
+        "op": "replace",
+        "path": "firstName",
+        "value": "Mahesh"
+      },
+      {
+        "op": "replace",
+        "path": "lastName",
+        "value": "Purandare"
+      },
+      {
+        "op": "replace",
+        "path": "company",
+        "value": {
+          "id": 23705,
+          "name": "Cisco Systems Inc."
+        }
+      },
+      {
+        "op": "replace",
+        "path": "title",
+        "value": ""
+      },
+      {
+        "op": "replace",
+        "path": "inactiveFlag",
+        "value": false
+      }
+    ]
+  }
+}
+09:29:38.171     10/26/2023     Worker-3     [MuleRuntime].uber.1072: [c1-iti-cw-masterdata-sync-papi-v1].address-syncFlow.CPU_LITE @327c0f51     INFO
+event:8b3cfdc0-7406-11ee-9ce0-0646ab281fa3 "state" "TX"
+09:29:38.171     10/26/2023     Worker-3     [MuleRuntime].uber.1071: [c1-iti-cw-masterdata-sync-papi-v1].address-syncFlow.CPU_INTENSIVE @4ace2351     INFO
+event:8b3cfdc0-7406-11ee-9ce0-0646ab281fa3 accountName "Cisco Systems Inc."
+09:29:38.172     10/26/2023     Worker-3     [MuleRuntime].uber.1072: [c1-iti-cw-masterdata-sync-papi-v1].address-syncFlow.CPU_INTENSIVE @4ace2351     INFO
+event:8b3cfdc0-7406-11ee-9ce0-0646ab281fa3 {
+  "GenericRequest": {
+    "ClientId": "9c6863e2-7984-43ca-8f97-47786a4dccfd",
+    "Accept": "application/vnd.connectwise.com+json; version = 2020.4",
+    "SystemName": "WrightCore_CCW",
+    "Url": "https://na.myconnectwise.net/v2022_2/apis/3.0",
+    "Method": "PATCH",
+    "Path": "/company/companies/23705/sites/31829",
+    "Query": "",
+    "Payload": [
+      {
+        "op": "replace",
+        "path": "name",
+        "value": "106934611"
+      },
+      {
+        "op": "replace",
+        "path": "phoneNumber",
+        "value": null
+      },
+      {
+        "op": "replace",
+        "path": "addressLine1",
+        "value": "823 CONGRESS AVE STE 300"
+      },
+      {
+        "op": "replace",
+        "path": "addressLine2",
+        "value": null
+      },
+      {
+        "op": "replace",
+        "path": "city",
+        "value": "AUSTIN"
+      },
+      {
+        "op": "replace",
+        "path": "stateReference",
+        "value": {
+          "identifier": "TX"
+        }
+      },
+      {
+        "op": "replace",
+        "path": "zip",
+        "value": "78701"
+      },
+      {
+        "op": "replace",
+        "path": "country",
+        "value": {
+          "name": "United States"
+        }
+      },
+      {
+        "op": "replace",
+        "path": "company",
+        "value": {
+          "name": "Cisco Systems Inc."
+        }
+      },
+      {
+        "op": "replace",
+        "path": "defaultShippingFlag",
+        "value": false
+      },
+      {
+        "op": "replace",
+        "path": "defaultBillingFlag",
+        "value": false
+      },
+      {
+        "op": "replace",
+        "path": "primaryAddressFlag",
+        "value": false
+      },
+      {
+        "op": "replace",
+        "path": "inactiveFlag",
+        "value": false
+      }
+    ]
+  }
+}
+09:29:38.313     10/26/2023     Worker-3     [MuleRuntime].uber.1071: [c1-iti-cw-masterdata-sync-papi-v1].address-syncFlow.CPU_INTENSIVE @4ace2351     INFO
+event:8b3cfdc0-7406-11ee-9ce0-0646ab281fa3 {
+  "GenericRequest": {
+    "Server": "OIESQL",
+    "Database": "OIE",
+    "Instance": "",
+    "Port": 1433,
+    "StoredProcedure": "dbo.usp_OIE_Ccw_MsgQueueTable_Status_Update",
+    "Params": {
+      "@MsgQueueId": 67923,
+      "@MsgNameSpace": "CRM/Sync/Address",
+      "@ProcessedDate": "2023-10-26T14:29:38.313Z",
+      "@Status": "Processed",
+      "@Active": 0,
+      "@ErrorMsg": ""
+    }
+  }
+}
+09:29:38.373     10/26/2023     Worker-3     [MuleRuntime].uber.1072: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @11bbdfdf     INFO
+event:5e3a5210-73fb-11ee-9ce0-0646ab281fa3 {
+  "GenericRequest": {
+    "ClientId": "9c6863e2-7984-43ca-8f97-47786a4dccfd",
+    "Accept": "application/vnd.connectwise.com+json; version = 2020.4",
+    "SystemName": "WrightCore_CCW",
+    "Url": "https://na.myconnectwise.net/v2022_2/apis/3.0",
+    "Method": "GET",
+    "Path": "/company/contacts/38479/communications",
+    "Query": "",
+    "Payload": {
+      
+    }
+  }
+}
+09:29:38.457     10/26/2023     Worker-3     [MuleRuntime].uber.1071: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @11bbdfdf     INFO
+event:5e3a5210-73fb-11ee-9ce0-0646ab281fa3 {
+  "GenericRequest": {
+    "Server": "OIESQL",
+    "Database": "OIE",
+    "Instance": "",
+    "Port": 1433,
+    "StoredProcedure": "dbo.usp_OIE_Ccw_MsgQueueTable_Status_Update",
+    "Params": {
+      "@MsgQueueId": 65026,
+      "@MsgNameSpace": "CRM/Sync/Contact",
+      "@ProcessedDate": "2023-10-26T14:29:38.456Z",
+      "@Status": "Processed",
+      "@Active": 0,
+      "@ErrorMsg": ""
+    }
+  }
+}
+09:29:38.495     10/26/2023     Worker-3     [MuleRuntime].uber.1071: [c1-iti-cw-masterdata-sync-papi-v1].processBatch-syncFlow.CPU_INTENSIVE @5051772     INFO
+event:8b3cfdc0-7406-11ee-9ce0-0646ab281fa3 "CRM/Sync/Address"
+09:29:38.496     10/26/2023     Worker-3     [MuleRuntime].uber.1072: [c1-iti-cw-masterdata-sync-papi-v1].address-syncFlow.CPU_LITE @327c0f51     INFO
+event:8b3cfdc0-7406-11ee-9ce0-0646ab281fa3 start of address flow
+09:29:38.496     10/26/2023     Worker-3     [MuleRuntime].uber.1072: [c1-iti-cw-masterdata-sync-papi-v1].address-syncFlow.CPU_LITE @327c0f51     INFO
+event:8b3cfdc0-7406-11ee-9ce0-0646ab281fa3 msgqueueId: 67922
+09:29:38.496     10/26/2023     Worker-3     [MuleRuntime].uber.1071: [c1-iti-cw-masterdata-sync-papi-v1].address-syncFlow.CPU_INTENSIVE @4ace2351     INFO
+event:8b3cfdc0-7406-11ee-9ce0-0646ab281fa3 messageRaw request {
+  "GenericRequest": {
+    "Server": "OIESQL",
+    "Database": "OIE",
+    "Instance": "",
+    "Port": 1433,
+    "StoredProcedure": "dbo.usp_OIE_Ccw_MessageRawData_Sel",
+    "Params": {
+      "@MsgQueueId": 67922
+    }
+  }
+}
+09:29:38.564     10/26/2023     Worker-0     [MuleRuntime].uber.1543: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @30c0ec07     INFO
+event:297699f0-73fe-11ee-9155-0232c4076f5d {
+  "GenericRequest": {
+    "ClientId": "9c6863e2-7984-43ca-8f97-47786a4dccfd",
+    "Accept": "application/vnd.connectwise.com+json; version = 2020.4",
+    "SystemName": "WrightCore_CCW",
+    "Url": "https://na.myconnectwise.net/v2022_2/apis/3.0",
+    "Method": "GET",
+    "Path": "/company/contacts/36941/communications",
+    "Query": "",
+    "Payload": {
+      
+    }
+  }
+}
+09:29:38.627     10/26/2023     Worker-0     [MuleRuntime].uber.1546: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @30c0ec07     INFO
+event:297699f0-73fe-11ee-9155-0232c4076f5d {
+  "GenericRequest": {
+    "Server": "OIESQL",
+    "Database": "OIE",
+    "Instance": "",
+    "Port": 1433,
+    "StoredProcedure": "dbo.usp_OIE_Ccw_MsgQueueTable_Status_Update",
+    "Params": {
+      "@MsgQueueId": 65763,
+      "@MsgNameSpace": "CRM/Sync/Contact",
+      "@ProcessedDate": "2023-10-26T14:29:38.627Z",
+      "@Status": "Processed",
+      "@Active": 0,
+      "@ErrorMsg": ""
+    }
+  }
+}
+09:29:38.652     10/26/2023     Worker-0     [MuleRuntime].uber.1546: [c1-iti-cw-masterdata-sync-papi-v1].processBatch-syncFlow.CPU_INTENSIVE @3acd7f39     INFO
+event:f4b8ae30-7400-11ee-9155-0232c4076f5d "CRM/Sync/Contact"
+09:29:38.653     10/26/2023     Worker-0     [MuleRuntime].uber.1543: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_LITE @7c8b3f3b     INFO
+event:f4b8ae30-7400-11ee-9155-0232c4076f5d start of contact flow
+09:29:38.653     10/26/2023     Worker-0     [MuleRuntime].uber.1543: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_LITE @7c8b3f3b     INFO
+event:f4b8ae30-7400-11ee-9155-0232c4076f5d 66426
+09:29:38.653     10/26/2023     Worker-0     [MuleRuntime].uber.1546: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @30c0ec07     INFO
+event:f4b8ae30-7400-11ee-9155-0232c4076f5d messageRaw request {
+  "GenericRequest": {
+    "Server": "OIESQL",
+    "Database": "OIE",
+    "Instance": "",
+    "Port": 1433,
+    "StoredProcedure": "dbo.usp_OIE_Ccw_MessageRawData_Sel",
+    "Params": {
+      "@MsgQueueId": 66426
+    }
+  }
+}
+09:29:38.654     10/26/2023     Worker-3     [MuleRuntime].uber.1071: [c1-iti-cw-masterdata-sync-papi-v1].processBatch-syncFlow.CPU_INTENSIVE @5051772     INFO
+event:5e3a5210-73fb-11ee-9ce0-0646ab281fa3 "CRM/Sync/Contact"
+09:29:38.655     10/26/2023     Worker-3     [MuleRuntime].uber.1072: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_LITE @6b194013     INFO
+event:5e3a5210-73fb-11ee-9ce0-0646ab281fa3 start of contact flow
+09:29:38.655     10/26/2023     Worker-3     [MuleRuntime].uber.1072: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_LITE @6b194013     INFO
+event:5e3a5210-73fb-11ee-9ce0-0646ab281fa3 65025
+09:29:38.655     10/26/2023     Worker-3     [MuleRuntime].uber.1071: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @11bbdfdf     INFO
+event:5e3a5210-73fb-11ee-9ce0-0646ab281fa3 messageRaw request {
+  "GenericRequest": {
+    "Server": "OIESQL",
+    "Database": "OIE",
+    "Instance": "",
+    "Port": 1433,
+    "StoredProcedure": "dbo.usp_OIE_Ccw_MessageRawData_Sel",
+    "Params": {
+      "@MsgQueueId": 65025
+    }
+  }
+}
+09:29:38.877     10/26/2023     Worker-3     [MuleRuntime].uber.1072: [c1-iti-cw-masterdata-sync-papi-v1].address-syncFlow.CPU_LITE @327c0f51     INFO
+event:8b3cfdc0-7406-11ee-9ce0-0646ab281fa3 sizeof message raw result set 1
+09:29:38.878     10/26/2023     Worker-3     [MuleRuntime].uber.1072: [c1-iti-cw-masterdata-sync-papi-v1].address-syncFlow.CPU_INTENSIVE @4ace2351     INFO
+event:8b3cfdc0-7406-11ee-9ce0-0646ab281fa3 get company query : {
+  "GenericRequest": {
+    "ClientId": "9c6863e2-7984-43ca-8f97-47786a4dccfd",
+    "Accept": "application/vnd.connectwise.com+json; version = 2020.4",
+    "SystemName": "WrightCore_CCW",
+    "Url": "https://na.myconnectwise.net/v2022_2/apis/3.0",
+    "Method": "GET",
+    "Path": "/company/companies",
+    "Query": "?customfieldconditions=caption=%22C1%20Company%20ID%22%20and%20value=%22SWCISCOCO001%22",
+    "Payload": {
+      
+    }
+  }
+}
+09:29:38.919     10/26/2023     Worker-0     [MuleRuntime].uber.1546: [c1-iti-cw-masterdata-sync-papi-v1].processBatch-syncFlow.CPU_INTENSIVE @3acd7f39     INFO
+event:297699f0-73fe-11ee-9155-0232c4076f5d "CRM/Sync/Contact"
+09:29:38.919     10/26/2023     Worker-0     [MuleRuntime].uber.1543: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_LITE @7c8b3f3b     INFO
+event:297699f0-73fe-11ee-9155-0232c4076f5d start of contact flow
+09:29:38.920     10/26/2023     Worker-0     [MuleRuntime].uber.1543: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_LITE @7c8b3f3b     INFO
+event:297699f0-73fe-11ee-9155-0232c4076f5d 65762
+09:29:38.920     10/26/2023     Worker-0     [MuleRuntime].uber.1546: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @30c0ec07     INFO
+event:297699f0-73fe-11ee-9155-0232c4076f5d messageRaw request {
+  "GenericRequest": {
+    "Server": "OIESQL",
+    "Database": "OIE",
+    "Instance": "",
+    "Port": 1433,
+    "StoredProcedure": "dbo.usp_OIE_Ccw_MessageRawData_Sel",
+    "Params": {
+      "@MsgQueueId": 65762
+    }
+  }
+}
+09:29:38.938     10/26/2023     Worker-3     [MuleRuntime].uber.1072: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_LITE @6b194013     INFO
+event:5e3a5210-73fb-11ee-9ce0-0646ab281fa3 sizeof message raw result set 1
+09:29:38.939     10/26/2023     Worker-3     [MuleRuntime].uber.1072: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @11bbdfdf     INFO
+event:5e3a5210-73fb-11ee-9ce0-0646ab281fa3 get company query : {
+  "GenericRequest": {
+    "ClientId": "9c6863e2-7984-43ca-8f97-47786a4dccfd",
+    "Accept": "application/vnd.connectwise.com+json; version = 2020.4",
+    "SystemName": "WrightCore_CCW",
+    "Url": "https://na.myconnectwise.net/v2022_2/apis/3.0",
+    "Method": "GET",
+    "Path": "/company/companies",
+    "Query": "?customfieldconditions=caption=%22C1%20Company%20ID%22%20and%20value=%22SWCISCOCO001%22",
+    "Payload": {
+      
+    }
+  }
+}
+09:29:38.944     10/26/2023     Worker-0     [MuleRuntime].uber.1546: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_LITE @7c8b3f3b     INFO
+event:f4b8ae30-7400-11ee-9155-0232c4076f5d sizeof message raw result set 1
+09:29:38.945     10/26/2023     Worker-0     [MuleRuntime].uber.1546: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @30c0ec07     INFO
+event:f4b8ae30-7400-11ee-9155-0232c4076f5d get company query : {
+  "GenericRequest": {
+    "ClientId": "9c6863e2-7984-43ca-8f97-47786a4dccfd",
+    "Accept": "application/vnd.connectwise.com+json; version = 2020.4",
+    "SystemName": "WrightCore_CCW",
+    "Url": "https://na.myconnectwise.net/v2022_2/apis/3.0",
+    "Method": "GET",
+    "Path": "/company/companies",
+    "Query": "?customfieldconditions=caption=%22C1%20Company%20ID%22%20and%20value=%22SWCISCOCO001%22",
+    "Payload": {
+      
+    }
+  }
+}
+09:29:39.116     10/26/2023     Worker-3     [MuleRuntime].uber.1071: [c1-iti-cw-masterdata-sync-papi-v1].address-syncFlow.CPU_INTENSIVE @4ace2351     INFO
+event:8b3cfdc0-7406-11ee-9ce0-0646ab281fa3 Log cw get company site request : {
+  "GenericRequest": {
+    "ClientId": "9c6863e2-7984-43ca-8f97-47786a4dccfd",
+    "Accept": "application/vnd.connectwise.com+json; version = 2020.4",
+    "SystemName": "WrightCore_CCW",
+    "Url": "https://na.myconnectwise.net/v2022_2/apis/3.0",
+    "Method": "GET",
+    "Path": "/company/companies/23705/sites",
+    "Query": "?customfieldconditions=caption=%22C1%20Ship%20ID%22%20and%20value=%22SHIP325%22",
+    "Payload": {
+      
+    }
+  }
+}
+09:29:39.137     10/26/2023     Worker-3     [MuleRuntime].uber.1072: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @11bbdfdf     INFO
+event:5e3a5210-73fb-11ee-9ce0-0646ab281fa3 cw get contact request {
+  "GenericRequest": {
+    "ClientId": "9c6863e2-7984-43ca-8f97-47786a4dccfd",
+    "Accept": "application/vnd.connectwise.com+json; version = 2020.4",
+    "SystemName": "WrightCore_CCW",
+    "Url": "https://na.myconnectwise.net/v2022_2/apis/3.0",
+    "Method": "GET",
+    "Path": "/company/contacts",
+    "Query": "?conditions=company/id=23705&customfieldconditions=caption=%22C1%20Contact%20ID%22%20and%20value=%22a339620d-2f23-e911-80db-0050568c4bab%22",
+    "Payload": {
+      
+    }
+  }
+}
+09:29:39.156     10/26/2023     Worker-0     [MuleRuntime].uber.1543: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @30c0ec07     INFO
+event:f4b8ae30-7400-11ee-9155-0232c4076f5d cw get contact request {
+  "GenericRequest": {
+    "ClientId": "9c6863e2-7984-43ca-8f97-47786a4dccfd",
+    "Accept": "application/vnd.connectwise.com+json; version = 2020.4",
+    "SystemName": "WrightCore_CCW",
+    "Url": "https://na.myconnectwise.net/v2022_2/apis/3.0",
+    "Method": "GET",
+    "Path": "/company/contacts",
+    "Query": "?conditions=company/id=23705&customfieldconditions=caption=%22C1%20Contact%20ID%22%20and%20value=%2237913975-1e7f-428c-8665-3db51d30c544%22",
+    "Payload": {
+      
+    }
+  }
+}
+09:29:39.197     10/26/2023     Worker-0     [MuleRuntime].uber.1546: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_LITE @7c8b3f3b     INFO
+event:297699f0-73fe-11ee-9155-0232c4076f5d sizeof message raw result set 1
+09:29:39.198     10/26/2023     Worker-0     [MuleRuntime].uber.1546: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @30c0ec07     INFO
+event:297699f0-73fe-11ee-9155-0232c4076f5d get company query : {
+  "GenericRequest": {
+    "ClientId": "9c6863e2-7984-43ca-8f97-47786a4dccfd",
+    "Accept": "application/vnd.connectwise.com+json; version = 2020.4",
+    "SystemName": "WrightCore_CCW",
+    "Url": "https://na.myconnectwise.net/v2022_2/apis/3.0",
+    "Method": "GET",
+    "Path": "/company/companies",
+    "Query": "?customfieldconditions=caption=%22C1%20Company%20ID%22%20and%20value=%22SWCISCOCO001%22",
+    "Payload": {
+      
+    }
+  }
+}
+09:29:39.247     10/26/2023     Worker-3     [MuleRuntime].uber.1072: [c1-iti-cw-masterdata-sync-papi-v1].address-syncFlow.CPU_LITE @327c0f51     INFO
+event:8b3cfdc0-7406-11ee-9ce0-0646ab281fa3 ccwSiteStatus false
+09:29:39.249     10/26/2023     Worker-3     [MuleRuntime].uber.1071: [c1-iti-cw-masterdata-sync-papi-v1].address-syncFlow.CPU_INTENSIVE @4ace2351     INFO
+event:8b3cfdc0-7406-11ee-9ce0-0646ab281fa3 {
+  "GenericRequest": {
+    "Server": "OIESQL",
+    "Database": "OIE_ClientData",
+    "Instance": "",
+    "Port": "1433",
+    "StoredProcedure": "dbo.usp_OIE_DataTranslation_Sel",
+    "Params": {
+      "@AppSource": "CRM",
+      "@AppDestination": "CW",
+      "@BusinessTypeName": "State",
+      "@DataInputKey": "MI"
+    }
+  }
+}
+09:29:39.367     10/26/2023     Worker-0     [MuleRuntime].uber.1546: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_LITE @7c8b3f3b     INFO
+event:f4b8ae30-7400-11ee-9155-0232c4076f5d ccwContactStatus false
+09:29:39.368     10/26/2023     Worker-0     [MuleRuntime].uber.1543: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @30c0ec07     INFO
+event:f4b8ae30-7400-11ee-9155-0232c4076f5d statusOfContact: false
+09:29:39.369     10/26/2023     Worker-0     [MuleRuntime].uber.1546: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @30c0ec07     INFO
+event:f4b8ae30-7400-11ee-9155-0232c4076f5d {
+  "GenericRequest": {
+    "ClientId": "9c6863e2-7984-43ca-8f97-47786a4dccfd",
+    "Accept": "application/vnd.connectwise.com+json; version = 2020.4",
+    "SystemName": "WrightCore_CCW",
+    "Url": "https://na.myconnectwise.net/v2022_2/apis/3.0",
+    "Method": "PATCH",
+    "Path": "/company/contacts/35541/",
+    "Query": "",
+    "Payload": [
+      {
+        "op": "replace",
+        "path": "firstName",
+        "value": "Helen"
+      },
+      {
+        "op": "replace",
+        "path": "lastName",
+        "value": "E Schafer"
+      },
+      {
+        "op": "replace",
+        "path": "company",
+        "value": {
+          "id": 23705,
+          "name": "Cisco Systems Inc."
+        }
+      },
+      {
+        "op": "replace",
+        "path": "title",
+        "value": ""
+      },
+      {
+        "op": "replace",
+        "path": "inactiveFlag",
+        "value": false
+      }
+    ]
+  }
+}
+09:29:39.375     10/26/2023     Worker-3     [MuleRuntime].uber.1071: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_LITE @6b194013     INFO
+event:5e3a5210-73fb-11ee-9ce0-0646ab281fa3 ccwContactStatus false
+09:29:39.376     10/26/2023     Worker-3     [MuleRuntime].uber.1072: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @11bbdfdf     INFO
+event:5e3a5210-73fb-11ee-9ce0-0646ab281fa3 statusOfContact: false
+09:29:39.376     10/26/2023     Worker-3     [MuleRuntime].uber.1071: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @11bbdfdf     INFO
+event:5e3a5210-73fb-11ee-9ce0-0646ab281fa3 {
+  "GenericRequest": {
+    "ClientId": "9c6863e2-7984-43ca-8f97-47786a4dccfd",
+    "Accept": "application/vnd.connectwise.com+json; version = 2020.4",
+    "SystemName": "WrightCore_CCW",
+    "Url": "https://na.myconnectwise.net/v2022_2/apis/3.0",
+    "Method": "PATCH",
+    "Path": "/company/contacts/38482/",
+    "Query": "",
+    "Payload": [
+      {
+        "op": "replace",
+        "path": "firstName",
+        "value": "DeviPrasad"
+      },
+      {
+        "op": "replace",
+        "path": "lastName",
+        "value": "Natesan"
+      },
+      {
+        "op": "replace",
+        "path": "company",
+        "value": {
+          "id": 23705,
+          "name": "Cisco Systems Inc."
+        }
+      },
+      {
+        "op": "replace",
+        "path": "title",
+        "value": ""
+      },
+      {
+        "op": "replace",
+        "path": "inactiveFlag",
+        "value": false
+      }
+    ]
+  }
+}
+09:29:39.459     10/26/2023     Worker-0     [MuleRuntime].uber.1546: [c1-iti-cw-masterdata-sync-papi-v1].uber@org.mule.runtime.core.privileged.processor.chain.AbstractMessageProcessorChain.initialise:648 @4d89f408     ERROR
+event:f4b8ae30-7400-11ee-9155-0232c4076f5d 
+********************************************************************************
+Message               : HTTP POST on resource 'https://mule-worker-internal-c1-iti-cw-sapi-v1.us-e2.cloudhub.io:8092/api/generic' failed: bad request (400).
+Element               : patch-contact-sync-SubFlow/processors/4/route/0/processors/0/processors/0 @ c1-iti-cw-masterdata-sync-papi-v1:implementation/contact-sync-impl.xml:219 (Request)
+Element DSL           : <http:request method="POST" doc:name="Request" doc:id="e1683a33-43df-45c4-93a2-d307f4f5414f" config-ref="cw-sapi-config" path="#["/generic"]" sendCorrelationId="ALWAYS" correlationId="#[vars.correlationId]" target="contactResponse">
+<http:body><![CDATA[
+#[vars.patchQuery]
+]]></http:body>
+<http:headers><![CDATA[
+#[output application/java
+---
+{
+	"client_secret" : "${cw-sapi.client-secret}",
+	"client_id" : "${cw-sapi.client-id}"
+}]
+]]></http:headers>
+</http:request>
+Error type            : HTTP:BAD_REQUEST
+FlowStack             : at patch-contact-sync-SubFlow(patch-contact-sync-SubFlow/processors/4/route/0/processors/0/processors/0 @ c1-iti-cw-masterdata-sync-papi-v1:implementation/contact-sync-impl.xml:219 (Request))
+at contact-check-subFlow(contact-check-subFlow/processors/3/route/0/processors/3 @ c1-iti-cw-masterdata-sync-papi-v1:implementation/contact-sync-impl.xml:116 (patch-contact-sync-SubFlow))
+at contact-syncFlow(contact-syncFlow/processors/4/processors/0/route/0/processors/1/route/0/processors/0 @ c1-iti-cw-masterdata-sync-papi-v1:implementation/contact-sync-impl.xml:20 (check-contact-existance))
+at processBatch-syncFlow(processBatch-syncFlow/processors/3/processors/0/route/0/processors/0/processors/2/route/2/processors/0 @ c1-iti-cw-masterdata-sync-papi-v1:implementation/process-batch-sync-impl.xml:45 (contact-syncFlow))
+at cw-masterRecords-process4-flow(cw-masterRecords-process4-flow/processors/4/route/3/processors/0 @ c1-iti-cw-masterdata-sync-papi-v1:implementation/cw-master-records-process4-queue-impl.xml:37 (processBatch-syncFlow))
+Payload Type          : org.mule.runtime.core.internal.streaming.bytes.ManagedCursorStreamProvider
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+HTTP POST on resource 'https://mule-worker-internal-c1-iti-cw-sapi-v1.us-e2.cloudhub.io:8092/api/generic' failed: bad request (400).
+	at org.mule.extension.http.api.request.validator.RangeStatusCodeValidator.lambda$throwValidationException$3(RangeStatusCodeValidator.java:107)
+	at java.util.Optional.map(Optional.java:215)
+	at org.mule.extension.http.api.request.validator.RangeStatusCodeValidator.throwValidationException(RangeStatusCodeValidator.java:106)
+	at org.mule.extension.http.api.request.validator.SuccessStatusCodeValidator.lambda$validate$1(SuccessStatusCodeValidator.java:39)
+	at org.mule.extension.http.api.request.validator.SuccessStatusCodeValidator.validate(SuccessStatusCodeValidator.java:46)
+	at org.mule.extension.http.api.request.validator.SuccessStatusCodeValidator.validate(SuccessStatusCodeValidator.java:39)
+	at org.mule.extension.http.internal.request.HttpRequester.lambda$null$5(HttpRequester.java:174)
+	at org.mule.extension.http.internal.request.HttpRequester.resendRequest(HttpRequester.java:269)
+	at org.mule.extension.http.internal.request.HttpRequester.lambda$doRequestWithRetry$6(HttpRequester.java:167)
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:774)
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:750)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:1975)
+	at com.mulesoft.service.http.impl.service.client.EEGrizzlyHttpClient.lambda$sendAsync$1(EEGrizzlyHttpClient.java:152)
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:774)
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:750)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:1975)
+	at org.mule.service.http.impl.service.client.GrizzlyHttpClient.lambda$sendAsync$0(GrizzlyHttpClient.java:465)
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:774)
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:750)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:1975)
+	at org.mule.service.http.impl.service.client.async.ResponseAsyncHandler.onCompleted(ResponseAsyncHandler.java:47)
+	at org.mule.service.http.impl.service.client.async.ResponseAsyncHandler.onCompleted(ResponseAsyncHandler.java:29)
+	at com.ning.http.client.AsyncCompletionHandler.onCompleted(AsyncCompletionHandler.java:55)
+	at org.mule.service.http.impl.service.client.async.PreservingClassLoaderAsyncHandler.onCompleted(PreservingClassLoaderAsyncHandler.java:83)
+	at com.ning.http.client.providers.grizzly.AhcEventFilter.onHttpPacketParsed(AhcEventFilter.java:433)
+	at org.glassfish.grizzly.http.HttpCodecFilter.decodeWithTransferEncoding(HttpCodecFilter.java:1429)
+	at org.glassfish.grizzly.http.HttpCodecFilter.handleRead(HttpCodecFilter.java:677)
+	at org.glassfish.grizzly.http.HttpClientFilter.handleRead(HttpClientFilter.java:182)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:540)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.SameThreadIOStrategy.executeIoEvent(SameThreadIOStrategy.java:103)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.executeIoEvent(AbstractIOStrategy.java:89)
+	at org.glassfish.grizzly.nio.SelectorRunner.iterateKeyEvents(SelectorRunner.java:415)
+	at org.glassfish.grizzly.nio.SelectorRunner.iterateKeys(SelectorRunner.java:384)
+	at org.glassfish.grizzly.nio.SelectorRunner.doSelect(SelectorRunner.java:348)
+	at org.glassfish.grizzly.nio.SelectorRunner.run(SelectorRunner.java:279)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.mule.service.scheduler.internal.AbstractRunnableFutureDecorator.doRun(AbstractRunnableFutureDecorator.java:151)
+	at org.mule.service.scheduler.internal.RunnableFutureDecorator.run(RunnableFutureDecorator.java:54)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+********************************************************************************
+09:29:39.459     10/26/2023     Worker-0     [MuleRuntime].uber.1543: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @30c0ec07     INFO
+event:f4b8ae30-7400-11ee-9155-0232c4076f5d {
+  "error": "Error- update contactHelencompany: SWCISCOCO001"
+}
+09:29:39.460     10/26/2023     Worker-0     [MuleRuntime].uber.1546: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @30c0ec07     INFO
+event:f4b8ae30-7400-11ee-9155-0232c4076f5d {
+  "GenericRequest": {
+    "ClientId": "9c6863e2-7984-43ca-8f97-47786a4dccfd",
+    "Accept": "application/vnd.connectwise.com+json; version = 2020.4",
+    "SystemName": "WrightCore_CCW",
+    "Url": "https://na.myconnectwise.net/v2022_2/apis/3.0",
+    "Method": "GET",
+    "Path": "/company/contacts/35540/communications",
+    "Query": "",
+    "Payload": {
+      
+    }
+  }
+}
+09:29:39.493     10/26/2023     Worker-3     [MuleRuntime].uber.1071: [c1-iti-cw-masterdata-sync-papi-v1].address-syncFlow.CPU_LITE @327c0f51     INFO
+event:8b3cfdc0-7406-11ee-9ce0-0646ab281fa3 "state" "MI"
+09:29:39.493     10/26/2023     Worker-3     [MuleRuntime].uber.1072: [c1-iti-cw-masterdata-sync-papi-v1].address-syncFlow.CPU_INTENSIVE @4ace2351     INFO
+event:8b3cfdc0-7406-11ee-9ce0-0646ab281fa3 accountName "Cisco Systems Inc."
+09:29:39.522     10/26/2023     Worker-0     [MuleRuntime].uber.1546: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @30c0ec07     INFO
+event:f4b8ae30-7400-11ee-9155-0232c4076f5d {
+  "GenericRequest": {
+    "Server": "OIESQL",
+    "Database": "OIE",
+    "Instance": "",
+    "Port": 1433,
+    "StoredProcedure": "dbo.usp_OIE_Ccw_MsgQueueTable_Status_Update",
+    "Params": {
+      "@MsgQueueId": 66426,
+      "@MsgNameSpace": "CRM/Sync/Contact",
+      "@ProcessedDate": "2023-10-26T14:29:39.522Z",
+      "@Status": "Processed",
+      "@Active": 0,
+      "@ErrorMsg": ""
+    }
+  }
+}
+09:29:39.712     10/26/2023     Worker-0     [MuleRuntime].uber.1543: [c1-iti-cw-masterdata-sync-papi-v1].processBatch-syncFlow.CPU_INTENSIVE @3acd7f39     INFO
+event:f4b8ae30-7400-11ee-9155-0232c4076f5d "CRM/Sync/Contact"
+09:29:39.713     10/26/2023     Worker-0     [MuleRuntime].uber.1546: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_LITE @7c8b3f3b     INFO
+event:f4b8ae30-7400-11ee-9155-0232c4076f5d start of contact flow
+09:29:39.713     10/26/2023     Worker-0     [MuleRuntime].uber.1546: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_LITE @7c8b3f3b     INFO
+event:f4b8ae30-7400-11ee-9155-0232c4076f5d 66425
+09:29:39.714     10/26/2023     Worker-0     [MuleRuntime].uber.1543: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @30c0ec07     INFO
+event:f4b8ae30-7400-11ee-9155-0232c4076f5d messageRaw request {
+  "GenericRequest": {
+    "Server": "OIESQL",
+    "Database": "OIE",
+    "Instance": "",
+    "Port": 1433,
+    "StoredProcedure": "dbo.usp_OIE_Ccw_MessageRawData_Sel",
+    "Params": {
+      "@MsgQueueId": 66425
+    }
+  }
+}
+09:29:40.000     10/26/2023     Worker-0     [MuleRuntime].uber.1543: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @30c0ec07     INFO
+event:297699f0-73fe-11ee-9155-0232c4076f5d cw get contact request {
+  "GenericRequest": {
+    "ClientId": "9c6863e2-7984-43ca-8f97-47786a4dccfd",
+    "Accept": "application/vnd.connectwise.com+json; version = 2020.4",
+    "SystemName": "WrightCore_CCW",
+    "Url": "https://na.myconnectwise.net/v2022_2/apis/3.0",
+    "Method": "GET",
+    "Path": "/company/contacts",
+    "Query": "?conditions=company/id=23705&customfieldconditions=caption=%22C1%20Contact%20ID%22%20and%20value=%22635b6212-42e9-e911-80e1-0050568c4bab%22",
+    "Payload": {
+      
+    }
+  }
+}
+09:29:40.145     10/26/2023     Worker-0     [MuleRuntime].uber.1546: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_LITE @7c8b3f3b     INFO
+event:f4b8ae30-7400-11ee-9155-0232c4076f5d sizeof message raw result set 1
+09:29:40.150     10/26/2023     Worker-0     [MuleRuntime].uber.1546: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @30c0ec07     INFO
+event:f4b8ae30-7400-11ee-9155-0232c4076f5d get company query : {
+  "GenericRequest": {
+    "ClientId": "9c6863e2-7984-43ca-8f97-47786a4dccfd",
+    "Accept": "application/vnd.connectwise.com+json; version = 2020.4",
+    "SystemName": "WrightCore_CCW",
+    "Url": "https://na.myconnectwise.net/v2022_2/apis/3.0",
+    "Method": "GET",
+    "Path": "/company/companies",
+    "Query": "?customfieldconditions=caption=%22C1%20Company%20ID%22%20and%20value=%22SWCISCOCO001%22",
+    "Payload": {
+      
+    }
+  }
+}
+09:29:40.214     10/26/2023     Worker-0     [MuleRuntime].uber.1546: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_LITE @7c8b3f3b     INFO
+event:297699f0-73fe-11ee-9155-0232c4076f5d ccwContactStatus false
+09:29:40.214     10/26/2023     Worker-0     [MuleRuntime].uber.1543: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @30c0ec07     INFO
+event:297699f0-73fe-11ee-9155-0232c4076f5d statusOfContact: false
+09:29:40.215     10/26/2023     Worker-0     [MuleRuntime].uber.1546: [c1-iti-cw-masterdata-sync-papi-v1].contact-syncFlow.CPU_INTENSIVE @30c0ec07     INFO
+event:297699f0-73fe-11ee-9155-0232c4076f5d {
+  "GenericRequest": {
+    "ClientId": "9c6863e2-7984-43ca-8f97-47786a4dccfd",
+    "Accept": "application/vnd.connectwise.com+json; version = 2020.4",
+    "SystemName": "WrightCore_CCW",
+    "Url": "https://na.myconnectwise.net/v2022_2/apis/3.0",
+    "Method": "PATCH",
+    "Path": "/company/contacts/36943/",
+    "Query": "",
+    "Payload": [
+      {
+        "op": "replace",
+        "path": "firstName",
+        "value": "Pooshan"
+      },
+      {
+        "op": "replace",
+        "path": "lastName",
+        "value": "Vyas"
+      },
+      {
+        "op": "replace",
+        "path": "company",
+        "value": {
+          "id": 23705,
+          "name": "Cisco Systems Inc."
+        }
+      },
+      {
+        "op": "replace",
+        "path": "title",
+        "value": ""
+      },
+      {
+        "op": "replace",
+        "path": "inactiveFlag",
+        "value": false
+      }
+    ]
+  }
+}
+Deployments
+Tuesday
+10-24-2023
+14:44 - Deployment
+10:55 - Deployment
+09:51 - Deployment
+08:46 - Deployment
+Wednesday
+10-18-2023
+11:13 - Deployment
+Tuesday
+10-17-2023
+23:30 - Deployment
+21:03 - Deployment
+Tuesday
+10-10-2023
+09:58 - Deployment
+Tuesday
+09-26-2023
+19:00 - Deployment

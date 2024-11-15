@@ -1,0 +1,1 @@
+<? xml version = "1.0" encoding = "UTF-8" ?> <testsuites name="NewManCollection" tests="1" time="1.068"> < testsuite name = "AnyPointApiData_Dev" id = "fa13e859-18ab-482f-93c4-31de1906ac19" timestamp = "2023-10-18T00:07:39.900Z" tests = "0" failures = "0" errors = "0" time = "1.068" /> </testsuites>

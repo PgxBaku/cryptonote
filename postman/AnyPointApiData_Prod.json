@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "148a942d-77a3-4221-84ad-c142e534b1f9",
+		"name": "NewManCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15501321"
+	},
+	"item": [
+		{
+			"name": "AnyPointApiData_Prod",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsData = pm.response.json();\r",
+							"\r",
+							"for (let i = 0; i < jsData.length; i++) {\r",
+							"    let item = jsData[i];\r",
+							"    //console.log(item);\r",
+							"\r",
+							"    /*console.log(\" : \" + i + \" : \"\r",
+							"        + \"AppName = \" + item.domain + \" : \"\r",
+							"        + \"Version = \" + item.properties[\"api.version\"] + \" : \"\r",
+							"        + \"Workers = \" + item.workers.amount + \" : \"\r",
+							"        + \"Vcores = \" + item.workers.type.cpu + \" : \"\r",
+							"        + \"remaining/total = \" + item.workers.remainingOrgWorkers + \"/\" + item.workers.totalOrgWorkers + \" : \"\r",
+							"        + \"Mem = \" + item.workers.type.memory + \" : \"\r",
+							"        + \"IP = \" + item.ipAddresses[0]?.address\r",
+							"    );*/\r",
+							"\r",
+							"     console.log(\" : \" + i + \" : \" + \"DEV\" + \" : \"\r",
+							"        + item.domain + \" : \"\r",
+							"        + item.properties[\"api.version\"] + \" : \"\r",
+							"        + item.workers.amount + \" : \"\r",
+							"        + item.workers.type.cpu + \" : \"\r",
+							"        + item.workers.remainingOrgWorkers + \"/\" + item.workers.totalOrgWorkers + \" : \"\r",
+							"        + item.workers.type.memory + \" : \"\r",
+							"        + item.ipAddresses[0]?.address\r",
+							"    );\r",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer c768ad94-8940-46f0-9f56-30e694625942",
+						"type": "text"
+					},
+					{
+						"key": "X-ANYPNT-ORG-ID",
+						"value": "294056d3-d133-4294-8ee4-ebd60ed7dc79",
+						"type": "text"
+					},
+					{
+						"key": "X-ANYPNT-ENV-ID",
+						"value": "718cde3b-02f0-4129-b4b3-49766d67bc3c",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://anypoint.mulesoft.com/cloudhub/api/v2/applications",
+					"protocol": "https",
+					"host": [
+						"anypoint",
+						"mulesoft",
+						"com"
+					],
+					"path": [
+						"cloudhub",
+						"api",
+						"v2",
+						"applications"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

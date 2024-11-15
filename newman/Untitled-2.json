@@ -1,0 +1,39 @@
+{
+   "NameSpace": "edi-invoice, edi-shipiing, edi-status",
+   "EdiType":"810,850,3B2,856,3A6,870,855",
+   "parent": {
+      "parentRowId": "1",
+      "parentinfo1": "parentvalue1"
+   },
+   "childrenCount": "500",
+   "children": [
+      {
+         "parentRowId": "1",
+         "childId":"1",
+         "childinfo1": "childvalue1"
+      },
+      {
+         "parentRowId": "1",
+         "childId":"2",
+         "childinfo1": "childvalue1"
+      },
+      {
+         "parentRowId": "1",
+         "childId":"3",
+         "childinfo1": "childvalue1"
+      },
+      {
+         "parentRowId": "1",
+         "childId":"4",
+         "childinfo1": "childvalue1"
+      },
+      {
+         "parentRowId": "1",
+         "childId":"5",
+         "childinfo1": "childvalue1"
+      }
+   ]
+}
+
+
+

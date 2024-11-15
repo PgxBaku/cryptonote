@@ -1,0 +1,206 @@
+{
+  "topic": "resellers/orders",
+  "event": "im::created",
+  "eventTimeStamp": "2021-11-01T13:02:06.369Z",
+  "eventId": "N01CIB9VVFYKR9J6ZW",
+  "resource": {
+    "eventType": "IM::quote_to_order_sandbox",
+    "customerOrderNumber": "X4CVRISAC104",
+    "endCustomerOrderNumber": "22-2453898",
+    "billToAddressId": "000",
+    "specialBidNumber": "ABC1726B",
+    "orderSplit": true,
+    "processedPartially": true,
+    "purchaseOrderTotal": 0,
+    "resellerInfo": {
+      "resellerId": "ABCD",
+      "companyName": "INGRAM MICRO TEST ACCOUNT",
+      "contact": "CONTACTNAME",
+      "addressLine1": "1610 E SAINT ANDREW PL",
+      "addressLine2": "ATTN TOD DEBIE",
+      "addressLine3": "ATTN TOD DEBIE AHDHD",
+      "city": "SANTA ANA",
+      "state": "CA",
+      "postalCode": "927054941",
+      "countryCode": "US",
+      "phoneNumber": 0,
+      "email": "ABCS@ingrammicro.com"
+    },
+    "shipToInfo": {
+      "addressId": "200",
+      "contact": "CONTACTNAME",
+      "companyName": "INGRAM MICRO TEST ACCOUNT",
+      "name1": "John",
+      "name2": "Paul",
+      "addressLine1": "1610 E SAINT ANDREW PL",
+      "addressLine2": "ATTN TOD AVBC",
+      "addressLine3": "ATTN TOD BVD",
+      "addressLine4": "ATTN TOD AJHS",
+      "addressLine5": "ATTN TOD JDG",
+      "houseNumber": "20",
+      "city": "SANTA",
+      "state": "CA",
+      "postalCode": "927054941",
+      "countryCode": "US",
+      "phoneNumber": 0,
+      "email": "absv@ingrammicro.com",
+      "district": "CA"
+    },
+    "endUserInfo": {
+      "endUserId": "qakhsadg",
+      "addressSequenceNumber": "akshd",
+      "contactId": "wkfhlehf",
+      "contact": "123474",
+      "companyName": "ABCD",
+      "name1": "John",
+      "name2": "Paul",
+      "name3": "Wick",
+      "segmentation": "ABCD",
+      "addressLine1": "ABCD",
+      "addressLine2": "ABCD",
+      "addressLine3": "ABCD",
+      "addressLine4": "ABCD",
+      "houseNumber": "23",
+      "city": "CA",
+      "state": "CA",
+      "postalCode": "927054941",
+      "countryCode": "US",
+      "phoneNumber": 0,
+      "email": "abcd@ingrammicro.com",
+      "authorizationNumber": "qwert",
+      "district": "CA"
+    },
+    "orders": [
+      {
+        "numberOfLinesWithSuccess": 0,
+        "numberOfLinesWithError": 0,
+        "numberOfLinesWithWarning": 0,
+        "ingramOrderNumber": "20-RN9RH",
+        "ingramOrderDate": "2023-03-30",
+        "notes": "////ORDER COMMENTS || HEADER || HD;:HEAD2222",
+        "orderType": "S",
+        "orderTotal": 0,
+        "freightCharges": 0,
+        "totalTax": 0,
+        "currencyCode": "USD",
+        "lines": [
+          {
+            "customerLineNumber": "001",
+            "lineType": "P",
+            "lineNumber": "002",
+            "globalSkuId": "A300-2CC559",
+            "ingramPartNumber": "2CC559",
+            "customerPartNumber": "zxcvbn",
+            "vendorPartNumber": "1FH49A8",
+            "quantity": 0,
+            "specialBidNumber": "acvb",
+            "notes": "Order",
+            "unitPrice": 0,
+            "endUserPoNumber": "acvb",
+            "endUserPrice": 0,
+            "carrierCode": "asdf",
+            "specialPrice": "zxcvb",
+            "aucSelectionCost": 0,
+            "acopTrackingNumber": "zxcvb",
+            "vmfAdditionalAttributes": [
+              {
+                "attributeName": "ABCD",
+                "attributeValue": "ABCD"
+              }
+            ],
+            "directShipConfigAttributes": [
+              {
+                "attributeName": "ABCDE",
+                "attributeValue": "ABCD"
+              }
+            ],
+            "additionalAttributes": [
+              {
+                "attributeName": "ABCDEF",
+                "attributeValue": "ABCD"
+              }
+            ],
+            "endUserInfo": [
+              {
+                "endUserType": "ABCD",
+                "endUserId": "ABCD",
+                "addressSequenceNumber": "ABCD",
+                "contactId": "ABCD",
+                "contact": "ABCD",
+                "companyName": "ABCD",
+                "name1": "ABCD",
+                "name2": "ABCD",
+                "name3": "ABCD",
+                "segmentation": "ABCD",
+                "addressLine1": "ABCD",
+                "addressLine2": "ABCD",
+                "addressLine3": "ABCD",
+                "addressLine4": "ABCD",
+                "houseNumber": "ABCD",
+                "city": "ABCD",
+                "state": "ABCD",
+                "postalCode": "ABCD",
+                "countryCode": "ABCD",
+                "phoneNumber": 0,
+                "email": "ABCD",
+                "district": "ABCD"
+              }
+            ],
+            "warrantyInfo": {
+              "agreementID": "ABCD",
+              "hardwareLineLink": [
+                "ABCD"
+              ],
+              "warrantyLineLink": [
+                "ABCD"
+              ],
+              "directLineLink": "ABCD",
+              "serialInfo": [
+                {
+                  "dateofPurchase": "ABCD",
+                  "shipDate": "ABCD",
+                  "primarySerialNumber": "ABCD",
+                  "additionalSerialNumber": [
+                    "ABCD"
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "miscellaneousCharges": [
+          {
+            "subOrderNumber": "ABCD",
+            "chargeLineReference": "ABCD",
+            "chargeDescription": "ABCD",
+            "chargeAmount": 0
+          }
+        ],
+        "links": [
+          {
+            "topic": "orders",
+            "href": "/resellers/v6/orders/20-RN9RH",
+            "type": "GET"
+          }
+        ],
+        "rejectedLineItems": [
+          {
+            "customerLinenumber": "ABCD",
+            "ingramPartNumber": "ABCD",
+            "vendorPartNumber": "ABCD",
+            "customerPartNumber": "ABCD",
+            "quantityOrdered": 0,
+            "rejectCode": "ABCD",
+            "rejectReason": "ABCD"
+          }
+        ],
+        "additionalAttributes": [
+          {
+            "attributeName": "ABCD",
+            "attributeValue": "ABCD"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+    "synchronizerRequest": {
+        "GenericRequest": {
+            "Server": "OIESQL",
+            "Database": "Synchronizer",
+            "Instance": "",
+            "Port": 1433,
+            "StoredProcedure": "usp_SynchronizerWorkItemExtension_Insert",
+            "Params": {
+                "SynchronizerWorkItemId": 1385895,
+                "CreatedOn": "2023-10-24 19:11:31.000",
+                "CreatedBy": "Davey Carlson",
+                "ModifiedBy": "Davey Carlson",
+                "TicketSubType": "BreakFix",
+                "Priority": "4",
+                "Impact": "Medium",
+                "Urgency": "Low",
+                "AssignedToName": "Test CSC Manager",
+                "AssignedToEmail": "TestCSCManager@C1.com",
+                "Source": "Phone",
+                "ResolutionCauseCode": null,
+                "ResolutionNote": "",
+                "CancellationReason": null,
+                "ExternalTicketNumber": "",
+                "CustomerCompanyCode": "",
+                "CustomerLocationCode": "",
+                "Status": "Waiting for Customer",
+                "AddressCode": "10900 Nesbitt Avenue South",
+                "ShortDescription": "TEST FAKE- IGNORE ME- Davey Carlson testing Vendor-Facing Triggers. I will cancel this ASAP tonight, Tuesday.",
+                "LongDescription": "TEST FAKE- IGNORE ME- Davey Carlson testing Vendor-Facing Triggers. I will cancel this ASAP tonight, Tuesday.",
+                "AllPublicNotes": "",
+                "PublicNote": null,
+                "PrivateNote": null,
+                "ResentUpgradeOrChangesText": "",
+                "FirstName": "AAA",
+                "LastName": "Test",
+                "Phone": "",
+                "Extension": "",
+                "Email": "",
+                "AttachmentName": null,
+                "AttachmentType": "",
+                "AttachmentFile": null,
+                "ConfigItemDescription": "Regression Testing - 091122",
+                "CustomerEquipmentCode": "",
+                "ConfigItemGUID": "518914ABC48144B8B7F73590996E8F24",
+                "AddrSiteName": "Test E Connect",
+                "AddrStreet": "219 E Main Street",
+                "AddrStreet2": "",
+                "AddrCity": "Apple Valley",
+                "AddrState": "MN",
+                "AddrZip": "55124",
+                "AddrCountry": "US",
+                "TicketType": "Incident",
+                "SessionId": "",
+                "SecondaryStatus": "",
+                "AssignedToPhone": "",
+                "ExistingItemID": null
+            }
+        }
+    },
+    "synchronizerResult": {
+        "resultSet1": [
+            {
+                "ExistingItemID": 905389
+            }
+        ],
+        "updateCount1": 1
+    }
+}

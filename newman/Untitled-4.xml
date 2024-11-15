@@ -1,0 +1,17 @@
+<soapenv:Body>
+    <getAll xmlns="urn:messages_2017_1.platform.webservices.netsuite.com">
+        <record recordType="shipitem"/>
+    </getAll>
+</soapenv:Body>
+
+
+<?xml version='1.0' encoding='UTF-8'?>
+<ns0:getall xmlns:ns0="urn:messages.platform.webservices.netsuite.com">
+    <ns01:record recordType="shipitem"/>
+</ns0:getall>
+
+
+<?xml version='1.0' encoding='UTF-8'?>
+<ns0:getall xmlns:ns0="urn:messages.platform.webservices.netsuite.com">
+    <ns01:record  xmlns:ns01="urn:core.platform.webservices.netsuite.com" recordType="shipitem"/>
+</ns0:getall>

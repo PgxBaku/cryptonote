@@ -1,0 +1,60 @@
+{
+    "NameSpace": "Edi_Status",
+    "EDI Type": 855,
+    "HeaderCount": 1,
+    "TotalLinesOfHeader": 3,
+    "LinesCount": 2,
+    "Header": {
+        "Rowid": 1,
+        "PONumber": "PO00659689",
+        "VendorId": null,
+        "VendorName": "SCANSOURCE",
+        "OrderDate": "2023-12-04T00:00:00",
+        "OrderStatusCode": "AK",
+        "OrderStatusDescription": "ACKNOWLEDGEMENT SUCCESS",
+        "ProcessStatusCode": "New",
+        "InsertedDate": "2023-12-12T21:15:23.033",
+        "InsertedBy": "EDI",
+        "TransactionGuid": "2601677C-29D0-4490-8944-917B86351678"
+    },
+    "Lines": [
+        {
+            "Rowid": 1,
+            "HeaderRowId": 1,
+            "PONumber": "PO00659689",
+            "LineNumber": "10",
+            "ItemNumber": "230168",
+            "LineStatusCode": "DR",
+            "LineStatusDescription": "Item Accepted - Date Rescheduled",
+            "ScheduledQuantity": 12,
+            "RequestedQuantity": 12,
+            "CancelledQuantity": 0,
+            "ClosedQuantity": 0,
+            "OriginalShipDate": null,
+            "RequestedShipDate": null,
+            "EstimatedShipDate": "2023-12-11T00:00:00",
+            "Price": 37.4,
+            "ProcessStatusCode": "New",
+            "InsertedDate": "2023-12-12T21:15:23.040"
+        },
+        {
+            "Rowid": 2,
+            "HeaderRowId": 1,
+            "PONumber": "PO00659689",
+            "LineNumber": "20",
+            "ItemNumber": "255557",
+            "LineStatusCode": "DR",
+            "LineStatusDescription": "Item Accepted - Date Rescheduled",
+            "ScheduledQuantity": 12,
+            "RequestedQuantity": 12,
+            "CancelledQuantity": 0,
+            "ClosedQuantity": 0,
+            "OriginalShipDate": null,
+            "RequestedShipDate": null,
+            "EstimatedShipDate": "2024-01-22T00:00:00",
+            "Price": 73.44,
+            "ProcessStatusCode": "New",
+            "InsertedDate": "2023-12-12T21:15:23.040"
+        }
+    ]
+}

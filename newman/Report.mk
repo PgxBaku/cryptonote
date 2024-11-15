@@ -1,0 +1,6 @@
+| Meets All Needs  for Drop Ship : RECEIPT | Matches on ( **SKU,***Quantity, C1 PO type is C1 Drop Ship, Physical Item:Yes ) |   |                                                                  |
+|------------------------------------------|---------------------------------------------------------------------------------|---|------------------------------------------------------------------|
+|  Create  Receipt                         | See ASN (856 ) Mapping                                                          |   |                                                                  |
+| Create Serials                           | Add Serials to Customer C1 Serials Table<br/>See ASN(856) Mapping               |   | If No Serial Number put the Lot Number ( this could be PO#-[n] ) |
+| Create/Add Tracking Entries              | Tracking#, # of/cartons, weight per, total weight, Carrier URL for tracking     |   |                                                                  |
+| Mark EDIConnical record status to Done   |
