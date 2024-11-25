@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "core-util-is": "^1.0.3",
+    "lodash": "^4.17.21",
+    "newman": "^6.2.1",
+    "node": "^20.18.1"
+  }
+}
