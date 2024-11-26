@@ -5,6 +5,10 @@
 			"path": "."
 		},
 		{
+			"name": ".dw",
+			"path": "../../../../.dw"
+		},
+		{
 			"name": "DataWeave",
 			"path": "../../DataWeave"
 		},
